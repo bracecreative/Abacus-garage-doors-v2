@@ -1,0 +1,15 @@
+/node_modules
+/.idea
+/.vscode
+/.DS_STORE
+/.ds_store
+css/editor-style.css
+resources/.DS_Store
+/css/app.css
+/js/app.css
+/js/app.js
+css/app.css
+js/app.css
+js/app.js
+resources/svg/.DS_Store
+template-parts/.DS_Store
