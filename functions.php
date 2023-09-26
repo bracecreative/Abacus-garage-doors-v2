@@ -1,4 +1,5 @@
 <?php
+require_once('acf/index.php');
 
 /**
  * Theme setup.

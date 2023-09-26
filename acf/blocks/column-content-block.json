@@ -1,0 +1,14 @@
+{
+	"name": "column-content",
+	"title": "Column Content",
+	"description": "A custom column content block.",
+	"style": ["file:./column-content.css"],
+	"category": "formatting",
+	"icon": "dashicons-layout",
+	"keywords": ["column", "textarea", "grid", "grid content"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "/templates/column-content-block.php"
+	},
+	"align": "full"
+}
