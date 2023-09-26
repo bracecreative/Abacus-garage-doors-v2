@@ -4,7 +4,7 @@
 	"description": "A custom column content block.",
 	"style": ["file:./column-content.css"],
 	"category": "formatting",
-	"icon": "dashicons-layout",
+	"icon": "dashicons-text",
 	"keywords": ["column", "textarea", "grid", "grid content"],
 	"acf": {
 		"mode": "preview",
