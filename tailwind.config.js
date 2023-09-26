@@ -33,14 +33,6 @@ module.exports = {
 				tailpress.theme("settings.typography.fontSizes", theme)
 			),
 		},
-		screens: {
-			xs: "480px",
-			sm: "600px",
-			md: "782px",
-			lg: tailpress.theme("settings.layout.contentSize", theme),
-			xl: tailpress.theme("settings.layout.wideSize", theme),
-			"2xl": "1440px",
-		},
 		colors: {
 			transparent: "transparent",
 			current: "currentColor",
@@ -50,21 +42,24 @@ module.exports = {
 			black: {
 				DEFAULT: "#000000",
 			},
-			accent: {
-				DEFAULT: "#F7CA2E",
-			},
-			accentdark: {
-				DEFAULT: "#E5BB29",
-			},
 			dblue: {
-				DEFAULT: "#2C3539",
+				DEFAULT: "#244480",
 			},
-			light: {
-				DEFAULT: "#F8F8F8",
+			lblue: {
+				DEFAULT: "#466289",
 			},
-			lightalt: {
-				DEFAULT: "#F0F0F0",
+			midblue: {
+				DEFAULT: "#3a557c",
 			},
+			buttonblue: {
+				DEFAULT: "#253957",
+			},
+			orange: {
+				DEFAULT: "#da7126",
+			},
+			lgrey: {
+				DEFAULT: "#83969f",
+			}
 		},
 	},
 	plugins: [tailpress.tailwind, typography],
