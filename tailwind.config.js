@@ -12,19 +12,11 @@ module.exports = {
 		"./resources/js/*.js",
 		"./safelist.txt",
 	],
-	safelist: ["col-span-4", "lg:col-span-2"],
+	safelist: ["col-span-4", "lg:col-span-2", "md:basis-13"],
 	theme: {
-		container: {
-			padding: {
-				DEFAULT: "1rem",
-				sm: "2rem",
-				lg: "0rem",
-			},
-		},
 		extend: {
 			fontFamily: {
-				sans: ["Poppins", ...defaultTheme.fontFamily.sans],
-				display: ["Quicksand", ...defaultTheme.fontFamily.sans],
+				sans: ["opensans", ...defaultTheme.fontFamily.sans],
 			},
 			colors: tailpress.colorMapper(
 				tailpress.theme("settings.color.palette", theme)

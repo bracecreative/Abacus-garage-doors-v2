@@ -1,0 +1,40 @@
+.site-footer {
+    .footer-images {
+        .image {
+            &.basis-13 {
+                @media all and (min-width: 768px) {
+                    @apply basis-[12.5%];
+                }
+            }
+        }
+    }
+    .content-wrap {
+            h1, h2, h3, h4, h5 {
+                @apply font-bold mb-3 text-lg text-orange uppercase;
+            }
+
+            p {
+                @apply mb-3 text-white text-sm;
+            }
+
+            a {
+                @apply text-white hover:text-orange;
+            }
+
+            ul {
+                @apply flex flex-col gap-2 mb-3 md:flex-row md:flex-wrap;
+                
+                li {
+                    @apply text-white text-sm;
+
+                    a {
+                        @apply text-white hover:text-orange;
+                    }
+                }
+            }
+
+            img {
+                @apply mb-6;
+            }
+    }
+}
