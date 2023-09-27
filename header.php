@@ -17,14 +17,14 @@
         $topbar_content = get_field('top_bar_content', 'option');
         if( !empty( $topbar_content ) ): ?>
             <div class="py-2 top-bar bg-dblue">
-                <div class="container mx-auto lg:px-10 xl:px-0 xl:w-10/12">
+                <div class="container max-w-[1280px] mx-auto lg:px-10 xl:px-0 xl:w-10/12">
                     <?php echo $topbar_content; ?>
                 </div>
             </div>
         <?php endif; ?>
 
         <div class="py-6 bg-white middle md:bg-white/75">
-            <div class="container mx-auto md:flex md:flex-row md:flex-wrap md:max-w-[91.666667%] xl:w-10/12">
+            <div class="container max-w-[1280px] mx-auto md:flex md:flex-row md:flex-wrap xl:w-10/12">
                 <div class="px-4 pb-6 logo-wrapper md:basis-7/12 md:flex md:items-center md:justify-center md:pb-0 md:pl-0 md:pr-20 lg:basis-6/12">
                     <?php
                     $logo = get_field('logo', 'option');
