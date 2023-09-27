@@ -12,7 +12,7 @@
 
 <body <?php body_class('font-sans');?>>
 
-    <header class="w-full site-header md:absolute md:left-0 md:top-0">
+    <header class="w-full site-header md:absolute md:left-0 md:top-0 md:z-[9999]">
         <?php
         $topbar_content = get_field('top_bar_content', 'option');
         if( !empty( $topbar_content ) ): ?>
