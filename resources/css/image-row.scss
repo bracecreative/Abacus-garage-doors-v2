@@ -8,7 +8,9 @@
             }
 
             &:hover .content {
-                @apply block;
+                @media all and (min-width: 1280px) {
+                    @apply block;
+                }
             }
         }
     }

@@ -1,0 +1,13 @@
+{
+	"name": "cta-block",
+	"title": "CTA Block",
+	"description": "A cta block.",
+	"style": ["file:.cta.css"],
+	"category": "formatting",
+	"icon": "dashicons-text",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "/templates/cta-block.php"
+	},
+	"align": "full"
+}
