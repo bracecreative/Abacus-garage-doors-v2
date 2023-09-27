@@ -23,7 +23,7 @@
             </div>
         <?php endif; ?>
 
-        <div class="middle bg-white py-6 md:bg-transparent">
+        <div class="middle bg-white py-6 md:bg-white/75">
             <div class="container mx-auto md:flex md:flex-row md:flex-wrap md:max-w-[91.666667%] xl:w-10/12">
                 <div class="logo-wrapper px-4 pb-6 md:basis-7/12 md:flex md:items-center md:justify-center md:pb-0 md:pl-0 md:pr-20 lg:basis-6/12">
                     <?php

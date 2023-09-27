@@ -1,0 +1,13 @@
+{
+	"name": "slider",
+	"title": "Slider",
+	"description": "A slider block.",
+	"style": ["file:.slider.css"],
+	"category": "formatting",
+	"icon": "dashicons-text",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "/templates/slider-block.php"
+	},
+	"align": "full"
+}

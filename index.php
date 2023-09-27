@@ -1,8 +1,5 @@
 <?php get_header(); ?>
 
-<div class="container mx-auto my-8">
-	<?php the_content(); ?>
-</div>
+<?php the_content(); ?>
 
-<?php
-get_footer();
+<?php get_footer(); ?>

@@ -1,0 +1,13 @@
+{
+	"name": "hero",
+	"title": "Hero",
+	"description": "A hero block.",
+	"style": ["file:.hero.css"],
+	"category": "formatting",
+	"icon": "dashicons-text",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "/templates/hero-block.php"
+	},
+	"align": "full"
+}
