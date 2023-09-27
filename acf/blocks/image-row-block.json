@@ -1,0 +1,13 @@
+{
+	"name": "image-row",
+	"title": "Image Row",
+	"description": "Image Row block.",
+	"style": ["file:.image-row.css"],
+	"category": "formatting",
+	"icon": "dashicons-text",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "/templates/image-row-block.php"
+	},
+	"align": "full"
+}

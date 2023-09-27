@@ -6,4 +6,5 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/slider-block.json');
     register_block_type( __DIR__ . '/blocks/hero-block.json');
     register_block_type( __DIR__ . '/blocks/contact-bar-block.json');
+    register_block_type( __DIR__ . '/blocks/image-row-block.json');
 }

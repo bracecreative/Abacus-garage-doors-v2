@@ -1,0 +1,11 @@
+.image-row {
+    .images {
+        .item {
+            &.basis-25 {
+                @media all and (min-width: 768px) {
+                    @apply basis-1/4;
+                }
+            }
+        }
+    }
+}
