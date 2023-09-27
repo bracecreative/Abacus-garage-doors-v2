@@ -37,9 +37,9 @@
 }
 ?>
 
-<section class="lg:px-4 <?php echo $background_color ?>">
+<section class="lg:px-4 title_content_image_block <?php echo $background_color ?>">
     <div class="container flex <?php echo $display_content_option == "Right" ? "flex-col-reverse" : "flex-col" ?> gap-4 p-0 mx-auto lg:flex-row">
-        <div class="<?php echo $display_content_option == "Right" ? "bg-center bg-no-repeat bg-cover w-full h-full lg:w-1/2 min-h-[500px]" : "hidden" ?>" style="background-image: url(<?php echo get_field('image'); ?>">
+        <div class="<?php echo $display_content_option == "Right" ? "bg-center bg-no-repeat bg-cover w-full lg:w-1/2 min-h-[500px]" : "hidden" ?>" style="background-image: url(<?php echo get_field('image'); ?>">
         </div>
         <div class="flex flex-col items-center w-full px-4 py-8 <?php echo $display_content_option == "Left" ? "lg:items-end" : "lg:items-start"?> lg:px-8 lg:w-1/2">
             <div class="flex flex-col items-center max-w-lg lg:items-baseline">
@@ -83,7 +83,7 @@
                 <?php } ?>
             </div>
         </div>
-        <div class="<?php echo $display_content_option == "Left" ? "bg-center bg-no-repeat bg-cover w-full h-full lg:w-1/2 min-h-[500px]" : "hidden" ?>" style="background-image: url(<?php echo get_field('image'); ?>">
+        <div class="<?php echo $display_content_option == "Left" ? "bg-center bg-no-repeat bg-cover w-full lg:w-1/2 min-h-[500px]" : "hidden" ?>" style="background-image: url(<?php echo get_field('image'); ?>">
         </div>
     </div>
 </section>
