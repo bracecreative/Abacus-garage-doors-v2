@@ -12,7 +12,7 @@ module.exports = {
 		"./resources/js/*.js",
 		"./safelist.txt",
 	],
-	safelist: ["col-span-4", "lg:col-span-2", "md:basis-13"],
+	safelist: ["col-span-4", "lg:col-span-2", "md:basis-12"],
 	theme: {
 		extend: {
 			fontFamily: {

@@ -1,9 +1,9 @@
 .site-footer {
     .footer-images {
         .image {
-            &.basis-13 {
+            &.basis-12 {
                 @media all and (min-width: 768px) {
-                    @apply basis-[12.5%];
+                    @apply basis-[11%];
                 }
             }
         }

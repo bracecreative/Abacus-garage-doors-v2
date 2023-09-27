@@ -1,5 +1,6 @@
 if( screen.width < 1024) {
 
+    // Main Nav Toggle
     let nav_toggle = document.querySelector('.site-header .nav-toggle');
     nav_toggle.addEventListener('click', function(e) {
         e.preventDefault();
@@ -7,6 +8,7 @@ if( screen.width < 1024) {
         nav_toggle.parentElement.querySelector('.nav-menu').classList.toggle('hidden');
     });
 
+    // Submenu Toggle
     let submenu_toggle = document.querySelectorAll('.site-header .nav-wrapper .nav-menu .menu li.menu-item-has-children > a');
     submenu_toggle.forEach((submenu) => {
         submenu.addEventListener('click', function(e) {
@@ -23,3 +25,11 @@ if( screen.width < 1024) {
         });
     });
 }
+
+// Scroll Up
+let scroll_up = document.querySelector('.scroll-up');
+scroll_up.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});

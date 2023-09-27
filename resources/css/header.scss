@@ -4,7 +4,7 @@
             @apply flex flex-row flex-wrap items-center justify-center text-white uppercase md:justify-end;
 
             img {
-                @apply ml-[8px] w-[100px] lg:w-[200px];
+                @apply ml-[8px] w-[100px] xl:w-[150px];
 
                 &:first-child {
                     @apply mr-[8px];
