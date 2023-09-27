@@ -23,38 +23,43 @@
 
 ?>
 
-<section class="h-screen px-4 py-8 bg-center bg-no-repeat bg-cover bg-primary"
+<section class="px-4 py-8 mt-[250px] bg-center bg-no-repeat bg-cover bg-white"
     style="background-image: url(<?php echo get_field('display_background_image') ? get_template_directory_uri() . "/resources/svg/svg-main-bg.svg" : " "; ?>">
     <div class="container p-0 mx-auto">
-        <h3 class="text-center text-primary mb-20 leading-10 text-[35px] xl:text-[48px] px-4">
+        <h3 class="w-full px-0 mb-10 text-2xl font-semibold text-center uppercase lg:max-w-xl lg:text-left text-orange">
             <?php echo get_field('title'); ?>
         </h3>
 
         <div class="grid grid-cols-1 gap-4 grid_content lg:grid-cols-3">
-            <?php foreach ($grid_content as $card) :
+             <?php if( have_rows('grid_content') ):
+                    while( have_rows('grid_content') ) : the_row();
+                        if( have_rows('card') ):
+                            while( have_rows('card') ) : the_row();
 
-                $button_link = get_field('button_link');
-                if( $button_link ) {
-                    $button_text = $button['title'];
-                    $button_url = $button['url'];
-                    $button_target =  $button['target'] ? $button['target'] : '_self';
-                }
-                $display_button_link = get_field('display_button_link');
+                            $title = get_sub_field('title');
+                            $textarea = get_sub_field('textarea');
+                            $button_link = get_sub_field('button_link');
+                            if( $button_link ) {
+                                $button_text = $button_link['title'];
+                                $button_url = $button_link['url'];
+                                $button_target =  $button_link['target'] ? $button_link['target'] : '_self';
+                            }
+                            $display_button_link = get_sub_field('display_button_link');
 
             ?>
 
-            <div class="flex flex-col items-center justify-between px-4 <?php echo get_field('title'); ?>">
+           <div class="<?php echo $display_card_background_color === "Blue" ? "bg-dblue" : "bg-white"; ?> flex flex-col items-center justify-between p-8">
                 <div class="flex flex-col gap-2">
-                    <h3 class="text-[24px] text-primary text-center md:text-left">
-                        <?php echo get_field('title'); ?>
+                    <h3 class="mb-6 text-2xl font-semibold text-center uppercase <?php echo $display_card_background_color === "Blue" ? "text-white" : "text-orange"; ?>">
+                        <?php echo get_sub_field('title'); ?>
                     </h3>
-                    <p class="text-[24px] text-primary text-center md:text-left">
-                        <?php echo get_field('textarea'); ?>
-                    </p>
+                    <div class="text-base text-center lg:text-left  <?php echo $display_card_background_color === "Blue" ? "text-white" : "text-lgrey"; ?>">
+                        <?php echo get_sub_field('textarea'); ?>
+                    </div>
                 </div>
                 <?php if( $button_link ) { ?>
-                <div class="<?php echo $display_button_link ? "block button" : "hidden"; ?>">
-                    <a class="px-4 py-2 text-white transition-all duration-200 ease-in-out bg-primary hover:bg-secondary"
+                <div class="<?php echo $display_button_link ? "flex mt-6" : "hidden"; ?>">
+                    <a class="px-8 py-3 text-lg font-semibold text-white uppercase transition-all duration-200 ease-in-out bg-orange <?php echo $display_card_background_color === "Blue" ? "hover:bg-lgrey" : "hover:bg-dblue "; ?>"
                         href="<?php echo $button_url; ?>" target="<?php echo $button_target; ?>">
                         <?php echo $button_text; ?>
                     </a>
@@ -62,7 +67,7 @@
                 <?php } ?>
             </div>
 
-            <?php endforeach; ?>
+            <?php endwhile; endif; endwhile; endif; ?>
 
         </div>
     </div>
