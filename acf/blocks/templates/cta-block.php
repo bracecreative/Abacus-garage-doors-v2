@@ -11,7 +11,7 @@ endif;
 
 if( !empty( $title ) ):
     echo '<section class="cta-block py-12" style="background-color: '.$background.';">';
-        echo '<div class="container flex flex-col gap-y-8 justify-center mx-auto px-10 '.(($layout == 'row') ? "lg:flex-row lg:flex-wrap lg:items-start lg:justify-between":"").' 2xl:px-0">';
+        echo '<div class="container flex flex-col gap-y-8 justify-center max-w-[1280px] mx-auto px-10 '.(($layout == 'row') ? "lg:flex-row lg:flex-wrap lg:items-start lg:justify-between":"").' 2xl:px-0">';
             
             if( !empty( $title ) ):
                 echo '<h2 class="text-center text-xl text-white uppercase lg:text-5xl '.(($layout == 'row') ? "text-left":"").'">'.$title.'</h2>';
