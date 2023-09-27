@@ -11,8 +11,7 @@ endif;
 $hero_overlay = get_field('include_overlay');
 $hero_heading = get_field('hero_heading');
 
-echo '<section class="hero-block relative'.$hero_bg_classes.'" '.$hero_bg_style.'>';
-echo $hero_overlay;
+echo '<section class="hero-block relative '.$hero_bg_classes.'" '.$hero_bg_style.'>';
     if( $hero_overlay == '1' ):
         echo '<div class="overlay absolute bg-black/5 h-full w-full"></div>';
     endif;

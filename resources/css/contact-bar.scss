@@ -1,0 +1,9 @@
+.contact-bar {
+    .item {
+        &.basis-20 {
+            @media all and (min-width: 1024px) {
+                @apply basis-1/5;
+            }
+        }
+    }
+}
