@@ -5,10 +5,12 @@
         
         <?php
         $footer_images = get_field('footer_images', 'option');
-        $images_count = count($footer_images);
-        $image_width = 100 / $images_count;
-        $image_width = ceil($image_width);
-        
+        if( !empty( $footer_images ) ):
+            $images_count = count($footer_images);
+            $image_width = 100 / $images_count;
+            $image_width = ceil($image_width);
+        endif;
+
         if( !empty( $footer_images ) ):
             echo '<div class="footer-images flex flex-row flex-wrap mb-[30px]">';
                 foreach( $footer_images as $image ):
