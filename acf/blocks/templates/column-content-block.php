@@ -24,8 +24,8 @@
 
 ?>
 
-<section class="px-4 py-8 mt-[250px] bg-center bg-no-repeat bg-cover bg-white"
-    style="background-image: url(<?php echo $display_background_image && $display_card_background_color === "Blue" ? get_template_directory_uri() . "/resources/svg/svg-main-bg.svg" : " "; ?>">
+<section class="px-4 py-8 bg-white bg-center bg-no-repeat bg-cover"
+    style="background-image: url(<?php echo $display_background_image && $display_card_background_color =="Blue" ? get_template_directory_uri() . "/resources/svg/svg-main-bg.svg" : " "; ?>">
     <div class="container p-0 mx-auto">
         <h3 class="w-full px-0 mb-10 text-2xl font-semibold text-center uppercase lg:max-w-xl lg:text-left text-orange">
             <?php echo get_field('title'); ?>
@@ -60,16 +60,16 @@
            
             ?> flex flex-col items-center justify-between p-8">
                 <div class="flex flex-col gap-2">
-                    <h3 class="mb-6 text-2xl font-semibold text-center uppercase <?php echo $display_card_background_color === "Blue" ? "text-white" : "text-orange"; ?>">
+                    <h3 class="mb-6 text-2xl font-semibold text-center uppercase <?php echo $display_card_background_color =="Blue" ? "text-white" : "text-orange"; ?>">
                         <?php echo get_sub_field('title'); ?>
                     </h3>
-                    <div class="text-base text-center lg:text-left text-[1.110rem] <?php echo $display_card_background_color === "Blue" ? "text-white" : "text-lgrey"; ?>">
+                    <div class="text-base text-center lg:text-left text-[1.110rem] <?php echo $display_card_background_color =="Blue" ? "text-white" : "text-lgrey"; ?>">
                         <?php echo get_sub_field('textarea'); ?>
                     </div>
                 </div>
                 <?php if( $button_link ) { ?>
                 <div class="<?php echo $display_button_link ? "flex mt-6" : "hidden"; ?>">
-                    <a class="px-8 py-3 text-lg font-semibold text-white uppercase transition-all duration-200 ease-in-out bg-orange <?php echo $display_card_background_color === "Blue" ? "hover:bg-lgrey" : "hover:bg-dblue "; ?>"
+                    <a class="px-8 py-3 text-lg font-semibold text-white uppercase transition-all duration-200 ease-in-out bg-orange <?php echo $display_card_background_color =="Blue" ? "hover:bg-lgrey" : "hover:bg-dblue "; ?>"
                         href="<?php echo $button_url; ?>" target="<?php echo $button_target; ?>">
                         <?php echo $button_text; ?>
                     </a>

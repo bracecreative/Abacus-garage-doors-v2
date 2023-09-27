@@ -1,0 +1,14 @@
+{
+	"name": "title-content-image-block",
+	"title": "Title Content Image",
+	"description": "A custom Title Content Image block.",
+	"style": ["file:./title-content-image.css"],
+	"category": "formatting",
+	"icon": "dashicons-text",
+	"keywords": ["Title", "textarea", "Image", "Title content"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "./templates/title-content-image-block.php"
+	},
+	"align": "full"
+}
