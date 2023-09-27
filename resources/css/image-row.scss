@@ -2,9 +2,13 @@
     .images {
         .item {
             &.basis-25 {
-                @media all and (min-width: 768px) {
+                @media all and (min-width: 1280px) {
                     @apply basis-1/4;
                 }
+            }
+
+            &:hover .content {
+                @apply block;
             }
         }
     }
