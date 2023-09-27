@@ -5,4 +5,5 @@ function register_acf_blocks() {
     register_block_type( dirname(__FILE__) . './blocks/column-content-block.json' );
     register_block_type( dirname(__FILE__) . './blocks/slider-block.json');
     register_block_type( dirname(__FILE__) . './blocks/hero-block.json');
+    register_block_type( dirname(__FILE__) . './blocks/contact-bar-block.json');
 }
