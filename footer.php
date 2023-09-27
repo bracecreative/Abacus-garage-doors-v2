@@ -1,7 +1,7 @@
 </main>
 
-<footer class="site-footer bg-buttonblue py-6">
-    <div class="container mx-auto px-8 xl:px-0">
+<!-- <footer class="py-6 site-footer bg-buttonblue">
+    <div class="container px-8 mx-auto xl:px-0">
         
         <?php
         $footer_images = get_field('footer_images', 'option');
@@ -12,7 +12,7 @@
         if( !empty( $footer_images ) ):
             echo '<div class="footer-images flex flex-row flex-wrap mb-[30px]">';
                 foreach( $footer_images as $image ):
-                    echo '<div class="image basis-2/4 flex basis-'.$image_width.'">';
+                    echo '<div class="flex image basis-2/4 basis-'.$image_width.'">';
                         echo wp_get_attachment_image( $image, 'full' );
                     echo '</div>';
                 endforeach;
@@ -25,9 +25,9 @@
         $right_content = get_field('right_content', 'option');
 
         if( !empty( $left_content ) || !empty( $right_content ) ):
-            echo '<div class="content-wrap flex flex-col gap-y-4 md:flex-row md:flex-wrap md:items-start md:justify-start">';
+            echo '<div class="flex flex-col content-wrap gap-y-4 md:flex-row md:flex-wrap md:items-start md:justify-start">';
                 if( !empty( $left_content ) ):
-                    echo '<div class="left-content basis-full flex md:basis-7/12">';
+                    echo '<div class="flex left-content basis-full md:basis-7/12">';
                         echo $left_content;
                     echo '</div>';
                 endif;
@@ -41,9 +41,9 @@
         endif;
         ?>
     </div>
-</footer>
+</footer> -->
 
-<a class="scroll-up bottom-20 fixed right-0 bg-orange p-2" href="#">
+<a class="fixed right-0 p-2 scroll-up bottom-20 bg-orange" href="#">
     <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><path fill="#FFF" d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>
 </a>
 

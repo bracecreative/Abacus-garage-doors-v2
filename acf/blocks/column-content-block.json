@@ -8,7 +8,7 @@
 	"keywords": ["column", "textarea", "grid", "grid content"],
 	"acf": {
 		"mode": "preview",
-		"renderTemplate": "/templates/column-content-block.php"
+		"renderTemplate": "./templates/column-content-block.php"
 	},
 	"align": "full"
 }
