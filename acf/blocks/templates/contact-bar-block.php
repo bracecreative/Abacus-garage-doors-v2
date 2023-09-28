@@ -7,7 +7,7 @@ else:
 endif;
 
 echo '<section class="contact-bar py-8" '.$background.'>';
-    echo '<div class="container flex flex-row flex-wrap gap-y-6 items-center justify-center mx-auto px-10 xl:px-0">';
+    echo '<div class="container flex flex-row flex-wrap gap-y-6 items-center justify-center max-w-[1280px] mx-auto px-10 xl:px-0">';
 
         $items = get_field('items');
         if( $items ):
