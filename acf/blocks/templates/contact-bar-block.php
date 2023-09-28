@@ -6,7 +6,7 @@ else:
     $background = 'style="background-color: #83969f;";';
 endif;
 
-echo '<section class="contact-bar py-8" '.$background.'>';
+echo '<section class="py-8 contact-bar" '.$background.'>';
     echo '<div class="container flex flex-row flex-wrap gap-y-6 items-center justify-center max-w-[1280px] mx-auto px-10 xl:px-0">';
 
         $items = get_field('items');
@@ -29,7 +29,7 @@ echo '<section class="contact-bar py-8" '.$background.'>';
 
 
                 if( $text ):
-                    echo '<div class="item basis-2/4 flex flex-row flex-wrap md:basis-1/3 basis-'.$item_width.'">';
+                    echo '<div class="flex flex-row flex-wrap item basis-2/4 md:basis-1/3 basis-'.$item_width.'">';
                         
                         if( $link_url ):
                             echo '<a class="flex flex-row flex-wrap items-center w-full" href="'.$link_url.'" target="'.$link_target.'">';
@@ -40,7 +40,7 @@ echo '<section class="contact-bar py-8" '.$background.'>';
                         endif;
 
                         if( $text ):
-                            echo '<span class="basis-auto inline-block max-w-[125px] text-base text-white md:max-w-auto lg:text-lg">'.$text.'</span>';
+                            echo '<span class="basis-auto text-center inline-block max-w-[125px] text-base text-white md:max-w-auto">'.$text.'</span>';
                         endif;
 
                         if( $link_url ):
