@@ -1,0 +1,14 @@
+{
+	"name": "process-icons-block",
+	"title": "Process Icons",
+	"description": "A custom Process Icons block.",
+	"style": ["file:./purchasing-process.css"],
+	"category": "formatting",
+	"icon": "dashicons-text",
+	"keywords": ["Title", "Icons", "Image", "Process"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "./templates/process-icons-block.php"
+	},
+	"align": "full"
+}
