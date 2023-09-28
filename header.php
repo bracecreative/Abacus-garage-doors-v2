@@ -23,7 +23,7 @@
             </div>
         <?php endif; ?>
 
-        <div class="bg-white middle pt-6 md:bg-white/75">
+        <div class="pt-6 bg-white middle md:bg-white/75">
             <div class="container max-w-[1280px] mx-auto md:flex md:flex-row md:flex-wrap xl:w-10/12">
                 <div class="px-4 pb-6 logo-wrapper md:basis-7/12 md:flex md:items-center md:justify-center md:pb-0 md:pl-[30px] md:pr-20 lg:basis-6/12 xl:pl-0">
                     <?php
@@ -52,7 +52,7 @@
                                     $phone_no = get_sub_field('phone_number');
                                     $phone_no_condensed = str_replace(' ', '', $phone_no);
                                     if( !empty( $phone_no ) ):
-                                        echo '<a class="text-sm text-center text-orange lg:text-base" href="tel:'.$phone_no_condensed.'">'.$phone_no.'</a>';
+                                        echo '<a class="text-sm font-semibold text-center text-orange lg:text-base" href="tel:'.$phone_no_condensed.'">'.$phone_no.'</a>';
                                     endif;
                                     
                                 echo '</div>';
@@ -67,7 +67,7 @@
             $bottom_content = get_field('bottom_bar_content', 'option');
             if( !empty( $bottom_content ) ):
                 ?>
-                <div class="bottom-bar bg-dblue max-w-[1280px] mt-[20px] px-6 py-4 md:mx-auto md:w-11/12 xl:w-10/12">
+                <div class="bottom-bar bg-dblue border-b-2 border-white max-w-[1280px] mt-[20px] px-6 py-4 md:mx-auto md:w-11/12 xl:w-10/12">
                     <?php echo $bottom_content; ?>
                 </div>
             <?php endif; ?>
