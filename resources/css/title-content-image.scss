@@ -1,0 +1,24 @@
+/* Title Content Image Component */
+.title_content_image {
+	p {
+		@apply py-2 text-[1.110rem];
+	}
+
+	.textarea {
+		h2,
+		h3,
+		h4 {
+			@apply text-2xl;
+		}
+
+		ol,
+		ul {
+			@apply py-2 flex flex-col items-center lg:items-start justify-center lg:justify-start;
+
+			li {
+				list-style-type: disc;
+				@apply ml-8 lg:ml-10 py-1 text-[1.110rem] w-fit;
+			}
+		}
+	}
+}
