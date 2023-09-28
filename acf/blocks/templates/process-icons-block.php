@@ -39,7 +39,7 @@
             <?php echo get_field('title'); ?>
         </h3>
 
-        <div class="grid grid-cols-1 mt-20 lg:grid-cols-4 gap-y-12 lg:gap-y-[4.5rem] lg:gap-x-10 icon_grid">
+        <div class="grid  items-center justify-center grid-cols-1 mt-20 lg:grid-cols-4 gap-y-12 lg:gap-y-[4.5rem] lg:gap-x-10 icon_grid">
                 <?php 
                     if( have_rows('icon_grid') ):
                         while( have_rows('icon_grid') ) : the_row();
@@ -48,7 +48,7 @@
                             $IconText = get_sub_field('text');
                 ?>
                 <div class="relative flex items-center justify-center gap-4 item">
-                    <img class="w-[50px] h-[50px] bg-contain bg-center" src="<?php echo $icon?>" alt="<?php echo $iconAlt?> Image">
+                    <img class="w-[50px] h-[50px] object-contain object-center" src="<?php echo $icon?>" alt="<?php echo $iconAlt?> Image">
                     <h3 class="text-xl font-semibold text-white"><?php echo $IconText?></h3>
                 </div>
                 <?php endwhile;  endif; ?>

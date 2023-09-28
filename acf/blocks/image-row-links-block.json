@@ -1,0 +1,14 @@
+{
+	"name": "image-row-links-block",
+	"title": "Image Row Links",
+	"description": "A custom Image Row Links block.",
+	"style": ["file:./image-row-links.css"],
+	"category": "formatting",
+	"icon": "dashicons-text",
+	"keywords": ["Image Grid", "Row", "Image", "Grid"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "./templates/image-row-links-block.php"
+	},
+	"align": "full"
+}

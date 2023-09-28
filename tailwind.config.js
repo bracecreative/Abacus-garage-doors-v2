@@ -54,6 +54,7 @@ module.exports = {
 			},
 			lightGrey: {
 				DEFAULT: "#f5f5f5",
+				two: "#e1e1e1",
 			},
 		},
 	},
