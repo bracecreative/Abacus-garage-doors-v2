@@ -51,7 +51,10 @@ module.exports = {
 			},
 			lgrey: {
 				DEFAULT: "#83969f",
-			}
+			},
+			lightGrey: {
+				DEFAULT: "#f5f5f5",
+			},
 		},
 	},
 	plugins: [tailpress.tailwind, typography],
