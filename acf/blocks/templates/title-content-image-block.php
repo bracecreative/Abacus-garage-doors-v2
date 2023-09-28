@@ -23,15 +23,38 @@
     $display_content_option = get_field('display_content_option');
     $display_background_color = get_field('display_background_color');
 
+    $title_color;
+    $textarea_color;
+    $button_color;
+    $button_hover_color;
     $background_color;
     switch ($display_background_color) {
     case "White":
+        $title_color = "text-orange";
+        $textarea_color = "text-black";
+        $button_color = "bg-orange";
+        $button_hover_color = "hover:bg-buttonblue";
         $background_color = "bg-white";
         break;
+    case "Grey":
+        $title_color = "text-orange";
+        $textarea_color = "text-black";
+        $button_color = "bg-buttonblue";
+        $button_hover_color = "hover:bg-orange";
+        $background_color = "bg-lightGrey";
+        break;
     case "Orange":
+        $title_color = "text-white";
+        $textarea_color = "text-white";
+        $button_color = "bg-buttonblue";
+        $button_hover_color = "hover:bg-lblue";
         $background_color = "bg-orange";
         break;
     case "Blue":
+        $title_color = "text-white";
+        $textarea_color = "text-white";
+        $button_color = "bg-orange";
+        $button_hover_color = "hover:bg-lblue";
         $background_color = "bg-buttonblue";
         break;
 }
@@ -43,39 +66,15 @@
         </div>
         <div class="flex flex-col items-center w-full px-4 py-8 <?php echo $display_content_option == "Left" ? "lg:items-end" : "lg:items-start"?> lg:px-8 lg:w-1/2">
             <div class="flex flex-col items-center max-w-lg lg:items-baseline">
-                <h3 class="w-full px-0 mb-6 text-2xl font-semibold text-center uppercase lg:text-left 
-                <?php 
-                    if($display_background_color == "White"){echo "text-orange";}
-                    elseif($display_background_color == "Orange"){echo "text-white";}
-                    elseif($display_background_color == "Blue"){echo "text-white";}
-                    else {echo "text-lgrey";}
-                ?>">
+                <h3 class="w-full px-0 mb-6 text-2xl font-semibold text-center uppercase lg:text-left <?php echo $title_color ?>">
                     <?php echo get_field('title'); ?>
                 </h3>
-                <div class="text-base text-center lg:text-left text-[1.110rem] <?php 
-                    if($display_background_color == "White") {echo "text-black";}
-                    elseif($display_background_color == "Orange") {echo "text-white";}
-                    elseif($display_background_color == "Blue"){echo "text-white";}
-                    else {echo "text-lgrey";}
-                ?>">
+                <div class="text-base text-center lg:text-left text-[1.110rem] <?php echo $textarea_color ?>">
                     <?php echo get_field('textarea'); ?>
                 </div>
                 <?php if( $button_link ) { ?>
                     <div class="flex mt-6">
-                        <a class="px-8 py-3 text-lg font-semibold text-white uppercase transition-all duration-200 ease-in-out 
-                        <?php
-                            if($display_background_color == "White"){echo "bg-orange";}
-                            elseif($display_background_color == "Orange"){echo "bg-buttonblue";}
-                            elseif($display_background_color == "Blue"){echo "bg-orange";}
-                            else {echo "bg-buttonblue";}
-                        ?>
-                        
-                        <?php 
-                            if($display_background_color == "White"){echo "hover:bg-buttonblue";}
-                            elseif($display_background_color == "Orange"){echo "hover:bg-lblue";}
-                            elseif($display_background_color == "Blue"){echo "hover:bg-lblue";}
-                            else {echo "hover:bg-buttonblue";}
-                        ?>"
+                        <a class="px-8 py-3 text-lg font-semibold text-white uppercase transition-all duration-200 ease-in-out <?php echo $button_color ?> <?php echo $button_hover_color ?>"
                             href="<?php echo $button_url; ?>" target="<?php echo $button_target; ?>">
                             <?php echo $button_text; ?>
                         </a>
