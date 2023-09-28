@@ -15,7 +15,6 @@
     //  Content
     $currentIteration = 1;
     $title = get_field('title');
-    $grid_content = get_field('grid_content');
 
     //  Display Options
     $display_title = get_field('display_title');

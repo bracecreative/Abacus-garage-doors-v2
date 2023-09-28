@@ -1,0 +1,89 @@
+/* Purchasing Process Component */
+.purchasing_process {
+	.icon_grid {
+		.item:nth-child(n)::after {
+			content: url("/resources/svg/White-Arrow-chevron-down.svg");
+			width: 45px;
+			height: 25px;
+			right: 75px;
+			bottom: -30px;
+			position: absolute;
+			display: inline-block;
+			transform: rotate(270deg);
+		}
+	}
+
+	@screen lg {
+		.icon_grid {
+			.item:nth-child(-n + 3)::after {
+				content: url("/resources/svg/White-Arrow-chevron-left.svg");
+				width: 45px;
+				height: 25px;
+				right: 0px;
+				bottom: 0px;
+				position: relative;
+				display: inline-block;
+				transform: rotate(180deg);
+			}
+
+			.item:nth-child(-n + 3)::after {
+				content: url("/resources/svg/White-Arrow-chevron-left.svg");
+				width: 45px;
+				height: 25px;
+				right: 0px;
+				bottom: 0px;
+				position: relative;
+				display: inline-block;
+				transform: rotate(180deg);
+			}
+
+			.item:nth-child(4)::after {
+				content: url("/resources/svg/White-Arrow-chevron-down.svg");
+				width: 45px;
+				height: 25px;
+				right: 75px;
+				bottom: -45px;
+				position: absolute;
+				display: inline-block;
+				transform: rotate(0deg);
+			}
+
+			.item:nth-child(5)::after {
+				content: url("/resources/svg/White-Arrow-chevron-right.svg");
+				width: 45px;
+				height: 25px;
+				right: 0px;
+				bottom: 0px;
+				position: relative;
+				display: inline-block;
+				transform: rotate(180deg);
+			}
+
+			.item:nth-child(6)::after {
+				content: url("/resources/svg/White-Arrow-chevron-right.svg");
+				width: 45px;
+				height: 25px;
+				right: 0px;
+				bottom: 0px;
+				position: relative;
+				display: inline-block;
+				transform: rotate(180deg);
+			}
+
+			.item:nth-child(7)::after {
+				content: url("/resources/svg/White-Arrow-chevron-right.svg");
+				width: 45px;
+				height: 25px;
+				right: 0px;
+				bottom: 0px;
+				position: relative;
+				display: inline-block;
+				transform: rotate(180deg);
+			}
+
+			.item:nth-child(8)::after {
+				content: url("");
+			}
+		}
+	}
+}
