@@ -9,5 +9,6 @@
 @import "image-row.scss";
 @import "purchasing-process.scss";
 @import "title-content-image.scss";
+@import "accordion.scss";
 
 @import "footer.scss";

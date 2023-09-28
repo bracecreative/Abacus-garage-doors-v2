@@ -1,0 +1,13 @@
+{
+	"name": "accordion",
+	"title": "Accordion",
+	"description": "A contact bar block.",
+	"style": ["file:.accordion.css"],
+	"category": "formatting",
+	"icon": "dashicons-text",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "/templates/accordion-block.php"
+	},
+	"align": "full"
+}

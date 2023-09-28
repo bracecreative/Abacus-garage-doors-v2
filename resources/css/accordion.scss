@@ -1,0 +1,21 @@
+.accordion {
+    .items {
+        .item {
+            .header {
+                @apply relative;
+
+                &::before {
+                    background-image: url(../resources/images/plus.svg);
+                    content: '';
+                    @apply absolute h-[12px] left-5 top-2/4 -translate-y-2/4 w-[12px];
+                }
+            
+                &.open {
+                    &::before {
+                        background-image: url(../resources/images/minus.svg);
+                    }
+                }
+            }
+        }
+    }
+}
