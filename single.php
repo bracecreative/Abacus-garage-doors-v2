@@ -10,7 +10,7 @@ else:
 endif;
 
 $hero_overlay = get_field('include_overlay', 'option');
-$hero_heading = get_field('hero_heading', 'option');
+$hero_heading = get_the_title( get_the_ID() );
 
 echo '<section class="hero-block relative '.$hero_bg_classes.'" '.$hero_bg_style.'>';
     if( $hero_overlay == '1' ):
@@ -83,7 +83,7 @@ echo '</section>';
 ?>
 
 <section class="posts-wrapper py-20">
-    <div class="container flex flex-col gap-y-8 mx-auto px-8 md:flex-row md:flex-wrap md:items-start md:justify-start 2xl:px-0">
+    <div class="container max-w-[800px] mx-auto px-8 2xl:px-0">
         <?php
         if( have_posts() ):
             while( have_posts() ): the_post();
@@ -92,17 +92,16 @@ echo '</section>';
                         if( has_post_thumbnail() ):
                             echo '<figure>';
                                 echo '<a href="'.get_the_permalink().'">';
-                                    the_post_thumbnail('full', array('class' => 'h-[190px] lg:h-[300px]') );
+                                    the_post_thumbnail('full', array('class' => 'w-full') );
                                 echo '</a>';
                             echo '</figure>';
                         endif;
 
                         echo '<div class="content p-4">';
-                            echo '<h2 class="mb-3 text-lg uppercase"><a class="text-[#666]" href="'.get_the_permalink().'">'.get_the_title().'</a></h2>';
-                            echo '<div class="excerpt mb-6 text-[#666]">';
-                                echo get_the_excerpt();
+                            echo '<div class="content-inner mb-6 text-[#666]">';
+                                echo get_the_content();
                             echo '</div>';
-                            echo '<a class="bg-buttonblue inline-block py-2 px-10 text-white uppercase" href="'.get_permalink().'">Read More</a>';
+                            echo '<a class="bg-buttonblue inline-block py-2 px-10 text-white uppercase" href="'.site_url('blog').'">Back to blog</a>';
                         echo '</div>';
                     echo '</div>';
                 echo '</article>';

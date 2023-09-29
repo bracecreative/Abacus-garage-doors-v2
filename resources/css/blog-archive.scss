@@ -1,0 +1,23 @@
+.posts-wrapper {
+    .pagination {
+        @apply border border-solid border-[#dee2e6] rounded-md;
+        
+        .nav-links {
+            @apply flex flex-row flex-wrap;
+
+            a {
+                @apply border-r border-solid border-[#dee2e6] inline-block px-3 py-1.5 text-buttonblue;
+
+                &:hover {
+                    @apply bg-[#e9ecef];
+                }
+            }
+            span {
+                &.current {
+                    @apply bg-buttonblue px-3 py-1.5 text-white;
+                }
+            }
+        }
+
+    }
+}

@@ -11,5 +11,7 @@
 @import "title-content-image.scss";
 @import "accordion.scss";
 @import "contact-form.scss";
+@import "blog-archive.scss";
+@import "blog-post.scss";
 
 @import "footer.scss";
