@@ -3,7 +3,7 @@
 	"title": "Accordion",
 	"description": "A contact bar block.",
 	"style": ["file:.accordion.css"],
-	"category": "formatting",
+	"category": "brace-blocks",
 	"icon": "dashicons-text",
 	"acf": {
 		"mode": "preview",

@@ -3,7 +3,7 @@
 	"title": "Column Content",
 	"description": "A custom column content block.",
 	"style": ["file:./column-content.css"],
-	"category": "formatting",
+	"category": "brace-blocks",
 	"icon": "dashicons-text",
 	"keywords": ["column", "textarea", "grid", "grid content"],
 	"acf": {

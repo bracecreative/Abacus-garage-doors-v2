@@ -3,7 +3,7 @@
 	"title": "Image Row Links",
 	"description": "A custom Image Row Links block.",
 	"style": ["file:./image-row-links.css"],
-	"category": "formatting",
+	"category": "brace-blocks",
 	"icon": "dashicons-text",
 	"keywords": ["Image Grid", "Row", "Image", "Grid"],
 	"acf": {

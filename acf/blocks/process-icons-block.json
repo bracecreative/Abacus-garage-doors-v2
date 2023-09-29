@@ -3,7 +3,7 @@
 	"title": "Process Icons",
 	"description": "A custom Process Icons block.",
 	"style": ["file:./purchasing-process.css"],
-	"category": "formatting",
+	"category": "brace-blocks",
 	"icon": "dashicons-text",
 	"keywords": ["Title", "Icons", "Image", "Process"],
 	"acf": {

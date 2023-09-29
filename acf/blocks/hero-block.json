@@ -3,7 +3,7 @@
 	"title": "Hero",
 	"description": "A hero block.",
 	"style": ["file:.hero.css"],
-	"category": "formatting",
+	"category": "brace-blocks",
 	"icon": "dashicons-text",
 	"acf": {
 		"mode": "preview",

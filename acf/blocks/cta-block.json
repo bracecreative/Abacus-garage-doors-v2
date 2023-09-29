@@ -3,7 +3,7 @@
 	"title": "CTA Block",
 	"description": "A cta block.",
 	"style": ["file:.cta.css"],
-	"category": "formatting",
+	"category": "brace-blocks",
 	"icon": "dashicons-text",
 	"acf": {
 		"mode": "preview",

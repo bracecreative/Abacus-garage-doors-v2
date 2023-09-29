@@ -13,3 +13,20 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/image-row-links-block.json');
     register_block_type( __DIR__ . '/blocks/accordion-block.json');
 }
+
+add_filter( 'block_categories', 'register_brace_block_category', 10, 2 );
+function register_brace_block_category( $categories ) {
+    $custom_block = array(
+        'slug'  => 'brace-blocks',
+        'title' => 'Brace Blocks',
+    );
+
+    $categories_sorted = array();
+    $categories_sorted[0] = $custom_block;
+
+    foreach ($categories as $category) {
+        $categories_sorted[] = $category;
+    }
+
+    return $categories_sorted;
+}

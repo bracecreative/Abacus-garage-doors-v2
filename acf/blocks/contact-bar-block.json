@@ -3,7 +3,7 @@
 	"title": "Contact Bar",
 	"description": "A contact bar block.",
 	"style": ["file:.contact-bar.css"],
-	"category": "formatting",
+	"category": "brace-blocks",
 	"icon": "dashicons-text",
 	"acf": {
 		"mode": "preview",
