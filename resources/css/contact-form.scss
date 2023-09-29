@@ -1,0 +1,32 @@
+.contact-form {
+    .form-wrapper {
+        .gform_wrapper {
+            @apply mt-0;
+            
+            .gfield {
+                @apply mt-2;
+            
+                .ginput_container {
+                    @apply !mt-0;
+
+                    input[type=text], textarea {
+                        @apply border border-b-2 border-[#ebebeb] !mt-0 !pb-1 !pl-4 !pt-4 !pr-1 text-[#464a4c] w-full;
+
+                        &:focus {
+                            @apply border-buttonblue;
+                        }
+                    }
+                }
+
+                &:first-child {
+                    @apply !mt-0;
+                }
+            }
+        }
+
+        input[type=submit] {
+            @apply bg-buttonblue font-bold px-20 py-2 text-xl text-white uppercase;
+        }
+
+    }
+}

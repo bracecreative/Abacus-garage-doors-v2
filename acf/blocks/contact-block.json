@@ -1,0 +1,13 @@
+{
+	"name": "contact-page",
+	"title": "Contact Page Block",
+	"description": "A contact form block.",
+	"style": ["file:.contact-form.css"],
+	"category": "brace-blocks",
+	"icon": "admin-users",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "/templates/contact-block.php"
+	},
+	"align": "full"
+}

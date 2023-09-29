@@ -5,6 +5,7 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/accordion-block.json');
     register_block_type( __DIR__ . '/blocks/column-content-block.json');
     register_block_type( __DIR__ . '/blocks/contact-bar-block.json');
+    register_block_type( __DIR__ . '/blocks/contact-block.json');
     register_block_type( __DIR__ . '/blocks/cta-block.json');
     register_block_type( __DIR__ . '/blocks/hero-block.json');
     register_block_type( __DIR__ . '/blocks/image-row-block.json');
