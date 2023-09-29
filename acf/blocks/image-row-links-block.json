@@ -4,7 +4,7 @@
 	"description": "A custom Image Row Links block.",
 	"style": ["file:./image-row-links.css"],
 	"category": "brace-blocks",
-	"icon": "dashicons-text",
+	"icon": "images-alt",
 	"keywords": ["Image Grid", "Row", "Image", "Grid"],
 	"acf": {
 		"mode": "preview",

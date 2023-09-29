@@ -4,7 +4,7 @@
 	"description": "A hero block.",
 	"style": ["file:.hero.css"],
 	"category": "brace-blocks",
-	"icon": "dashicons-text",
+	"icon": "cover-image",
 	"acf": {
 		"mode": "preview",
 		"renderTemplate": "/templates/hero-block.php"

@@ -4,7 +4,7 @@
 	"description": "A custom Process Icons block.",
 	"style": ["file:./purchasing-process.css"],
 	"category": "brace-blocks",
-	"icon": "dashicons-text",
+	"icon": "image-flip-horizontal",
 	"keywords": ["Title", "Icons", "Image", "Process"],
 	"acf": {
 		"mode": "preview",

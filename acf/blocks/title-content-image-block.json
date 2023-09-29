@@ -4,7 +4,7 @@
 	"description": "A custom Title Content Image block.",
 	"style": ["file:./title-content-image.css"],
 	"category": "brace-blocks",
-	"icon": "dashicons-text",
+	"icon": "align-right",
 	"keywords": ["Title", "textarea", "Image", "Title content"],
 	"acf": {
 		"mode": "preview",

@@ -4,7 +4,7 @@
 	"description": "A custom column content block.",
 	"style": ["file:./column-content.css"],
 	"category": "brace-blocks",
-	"icon": "dashicons-text",
+	"icon": "columns",
 	"keywords": ["column", "textarea", "grid", "grid content"],
 	"acf": {
 		"mode": "preview",

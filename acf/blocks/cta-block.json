@@ -4,7 +4,7 @@
 	"description": "A cta block.",
 	"style": ["file:.cta.css"],
 	"category": "brace-blocks",
-	"icon": "dashicons-text",
+	"icon": "id",
 	"acf": {
 		"mode": "preview",
 		"renderTemplate": "/templates/cta-block.php"

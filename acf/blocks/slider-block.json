@@ -4,7 +4,7 @@
 	"description": "A slider block.",
 	"style": ["file:.slider.css"],
 	"category": "brace-blocks",
-	"icon": "dashicons-text",
+	"icon": "embed-photo",
 	"acf": {
 		"mode": "preview",
 		"renderTemplate": "/templates/slider-block.php"

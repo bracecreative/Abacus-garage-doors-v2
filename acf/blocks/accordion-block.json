@@ -4,7 +4,7 @@
 	"description": "A contact bar block.",
 	"style": ["file:.accordion.css"],
 	"category": "brace-blocks",
-	"icon": "dashicons-text",
+	"icon": "editor-justify",
 	"acf": {
 		"mode": "preview",
 		"renderTemplate": "/templates/accordion-block.php"

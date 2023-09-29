@@ -4,7 +4,7 @@
 	"description": "A contact bar block.",
 	"style": ["file:.contact-bar.css"],
 	"category": "brace-blocks",
-	"icon": "dashicons-text",
+	"icon": "format-chat",
 	"acf": {
 		"mode": "preview",
 		"renderTemplate": "/templates/contact-bar-block.php"

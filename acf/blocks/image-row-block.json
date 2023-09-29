@@ -4,7 +4,7 @@
 	"description": "Image Row block.",
 	"style": ["file:.image-row.css"],
 	"category": "brace-blocks",
-	"icon": "dashicons-text",
+	"icon": "format-gallery",
 	"acf": {
 		"mode": "preview",
 		"renderTemplate": "/templates/image-row-block.php"
