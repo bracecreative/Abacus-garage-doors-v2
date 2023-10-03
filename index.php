@@ -12,14 +12,14 @@ endif;
 $hero_overlay = get_field('include_overlay', 'option');
 $hero_heading = get_field('hero_heading', 'option');
 
-echo '<section class="hero-block relative '.$hero_bg_classes.'" '.$hero_bg_style.'>';
+echo '<section class="relative hero-block '.$hero_bg_classes.'" '.$hero_bg_style.'>';
     if( $hero_overlay == '1' ):
-        echo '<div class="overlay absolute bg-black/5 h-full w-full"></div>';
+        echo '<div class="absolute w-full h-full overlay bg-black/5"></div>';
     endif;
 
     echo '<div class="container max-w-[1000px] mx-auto pb-16 md:pt-[400px] px-10 xl:px-0">';
         if( !empty( $hero_heading ) ):
-            echo '<h1 class="font-medium text-center text-white text-xl uppercase lg:text-4xl">'.$hero_heading.'</h1>';
+            echo '<h1 class="text-xl font-medium text-center text-white uppercase lg:text-4xl">'.$hero_heading.'</h1>';
         endif;
     echo '</div>';
 echo '</section>';
@@ -82,12 +82,12 @@ echo '<section class="py-8 contact-bar" '.$background.'>';
 echo '</section>';
 ?>
 
-<section class="posts-wrapper py-20">
-    <div class="container flex flex-col gap-y-8 mx-auto px-8 md:flex-row md:flex-wrap md:items-start md:justify-start 2xl:px-0">
+<section class="py-20 posts-wrapper">
+    <div class="container flex flex-col px-8 mx-auto gap-y-8 md:flex-row md:flex-wrap md:items-start md:justify-start 2xl:px-0">
         <?php
         if( have_posts() ):
             while( have_posts() ): the_post();
-                echo '<article class="post bais-full px-4 md:basis-2/4 lg:basis-1/3">';
+                echo '<article class="px-4 post bais-full md:basis-2/4 lg:basis-1/3">';
                     echo '<div class="inner border border-solid border-[#e6e6e6] shadow-sm">';
                         if( has_post_thumbnail() ):
                             echo '<figure>';
@@ -97,12 +97,12 @@ echo '</section>';
                             echo '</figure>';
                         endif;
 
-                        echo '<div class="content p-4">';
+                        echo '<div class="p-4 content">';
                             echo '<h2 class="mb-3 text-lg uppercase"><a class="text-[#666]" href="'.get_the_permalink().'">'.get_the_title().'</a></h2>';
                             echo '<div class="excerpt mb-6 text-[#666]">';
                                 echo get_the_excerpt();
                             echo '</div>';
-                            echo '<a class="bg-buttonblue inline-block py-2 px-10 text-white uppercase" href="'.get_permalink().'">Read More</a>';
+                            echo '<a class="inline-block px-10 py-2 text-white uppercase bg-buttonblue" href="'.get_permalink().'">Read More</a>';
                         echo '</div>';
                     echo '</div>';
                 echo '</article>';
@@ -144,7 +144,7 @@ if( !empty( $title ) ):
             endif;
 
             if( !empty( $button ) ):
-                echo '<a class="block py-4 text-lg font-semibold text-center text-white uppercase transition-all duration-200 ease-in-out bg-buttonblue hover:bg-lblue lg:inline-block lg:px-14" href="'.$button_url.'" target="'.$button_target.'">'.$button_text.'</a>';
+                echo '<a class="block py-4 mx-auto text-lg font-semibold text-center text-white uppercase transition-all duration-200 ease-in-out bg-buttonblue w-fit hover:bg-lblue lg:inline-block lg:px-14" href="'.$button_url.'" target="'.$button_target.'">'.$button_text.'</a>';
             endif;
 
         echo '</div>';
