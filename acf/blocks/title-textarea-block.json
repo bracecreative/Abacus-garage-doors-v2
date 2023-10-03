@@ -1,0 +1,14 @@
+{
+	"name": "title-textarea-block",
+	"title": "Title Textarea",
+	"description": "A custom Title Textarea block.",
+	"style": ["file:./title-textarea.css"],
+	"category": "brace-blocks",
+	"icon": "align-right",
+	"keywords": ["Title", "textarea", "Title content"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "./templates/title-textarea-block.php"
+	},
+	"align": "full"
+}

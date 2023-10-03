@@ -14,5 +14,6 @@
 @import "blog-archive.scss";
 @import "blog-post.scss";
 @import "areas.scss";
+@import "title_textarea.scss";
 
 @import "footer.scss";

@@ -30,7 +30,7 @@
             <?php echo get_field('title'); ?>
         </h3>
 
-        <div class="grid grid-cols-1 gap-4 grid_content lg:grid-cols-3">
+        <div class="grid grid-cols-1 <?php $display_card_background_color == "Blue"? "gap-0": "gap-4" ?> grid_content lg:grid-cols-3">
              <?php if( have_rows('grid_content') ):
                     while( have_rows('grid_content') ) : the_row();
                     if( have_rows('card') ):
