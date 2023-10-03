@@ -1,0 +1,13 @@
+{
+	"name": "areas",
+	"title": "Areas",
+	"description": "Areas block.",
+	"style": ["file:.areas.css"],
+	"category": "brace-blocks",
+	"icon": "location",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "/templates/areas-block.php"
+	},
+	"align": "full"
+}
