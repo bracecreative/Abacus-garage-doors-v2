@@ -14,6 +14,7 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/process-icons-block.json');
     register_block_type( __DIR__ . '/blocks/slider-block.json');
     register_block_type( __DIR__ . '/blocks/title-content-image-block.json');
+    register_block_type( __DIR__ . '/blocks/title-textarea-block.json');
 }
 
 add_filter( 'block_categories', 'register_brace_block_category', 10, 2 );

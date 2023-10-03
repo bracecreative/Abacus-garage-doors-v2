@@ -1,0 +1,26 @@
+/* Title Content Image Component */
+.title_textarea {
+	p {
+		@apply py-2 text-[1.110rem];
+	}
+
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply py-2 text-xl uppercase font-semibold;
+
+		strong {
+			@apply text-xl;
+		}
+	}
+
+	ol,
+	ul {
+		@apply py-2;
+	}
+
+	a {
+		@apply text-buttonblue font-semibold transition-all duration-200 ease-out hover:text-orange;
+	}
+}
