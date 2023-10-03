@@ -48,7 +48,7 @@
     style="background-image: url(<?php echo $display_background_svg ? get_template_directory_uri() . "/resources/svg/svg-main-bg.svg" : " "; ?>"
     >
     <div class="container p-0 mx-auto">
-        <div class="flex flex-col w-full py-16 mx-auto sm:py-20 lg:max-w-6xl">
+        <div class="flex flex-col w-full mx-auto lg:max-w-6xl">
             <?php if( get_field('title') ) { ?>
             <h2 class="w-full px-0 mb-6 text-2xl font-semibold text-center uppercase lg:max-w-xl lg:text-left <?php echo $title_color ?>">
                 <?php echo get_field('title') ?>
