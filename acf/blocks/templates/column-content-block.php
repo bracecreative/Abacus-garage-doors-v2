@@ -57,11 +57,13 @@
            { echo "bg-buttonblue"; }
            else { echo "bg-white"; }
            
-            ?> flex flex-col items-center justify-between p-8">
-                <div class="flex flex-col gap-2">
-                    <h3 class="mb-6 text-2xl font-semibold text-center uppercase <?php echo $display_card_background_color =="Blue" ? "text-white" : "text-orange"; ?>">
-                        <?php echo get_sub_field('title'); ?>
-                    </h3>
+            ?> flex flex-col items-center justify-between p-8 w-full">
+                <div class="flex flex-col gap-2 w-full">
+                    <?php if( !empty( get_sub_field('title') ) ): ?>
+                        <h3 class="mb-6 text-2xl font-semibold text-center uppercase <?php echo $display_card_background_color =="Blue" ? "text-white" : "text-orange"; ?>">
+                            <?php echo get_sub_field('title'); ?>
+                        </h3>
+                    <?php endif; ?>
                     <div class="text-base text-center lg:text-left text-[1.110rem] <?php echo $display_card_background_color =="Blue" ? "text-white" : "text-lgrey"; ?>">
                         <?php echo get_sub_field('textarea'); ?>
                     </div>
