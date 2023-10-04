@@ -122,3 +122,27 @@ if( gallery_images.length > 0 ) {
         });
     }
 }
+
+// CTA Block Buttons
+let cta_block_buttons = document.querySelectorAll('.cta-block a');
+if( cta_block_buttons.length > 0 ) {
+    cta_block_buttons.forEach((button) => {
+        button.addEventListener('click', function(e) {
+            let cta_link = button.href;
+            if( cta_link.includes('#') ) {
+                cta_link = cta_link.split('#');
+                cta_link = cta_link[1];
+
+                let form_id = cta_link.split('_');
+                    form_id = form_id[1];
+
+                let form = document.querySelector('#footer-form_'+form_id);
+                if (form.style.display === "none") {
+                    form.style.display = "block";
+                } else {
+                    form.style.display = "none";
+                }
+            }
+        });
+    });
+}
