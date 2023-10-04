@@ -1,7 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import "../fonts/opensans/opensans.css.css";
+@import "../fonts/opensans/opensans.css";
 
 @import "header.scss";
 
