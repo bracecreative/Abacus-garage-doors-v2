@@ -1,0 +1,13 @@
+{
+	"name": "gallery",
+	"title": "Gallery",
+	"description": "A gallery block.",
+	"style": ["file:.gallery.css"],
+	"category": "brace-blocks",
+	"icon": "format-gallery",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "/templates/gallery-block.php"
+	},
+	"align": "full"
+}
