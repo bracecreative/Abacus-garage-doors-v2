@@ -67,8 +67,8 @@ if( !empty( $side_buttons ) ):
             echo '</div>';
         endwhile;
 
-        echo '<div class="side-buttons flex-col gap-4 hidden h-full items-end justify-center relative lg:fixed lg:flex lg:right-0 lg:top-0">';
-            echo '<div class="inner flex gap-x-8 origin-right pt-[30px] rotate-90 w-full">';
+        echo '<div class="side-buttons flex-col gap-4 hidden h-2/4 items-end justify-center origin-right relative rotate-90 z-[9999] lg:fixed lg:flex lg:right-0 lg:top-2/4">';
+            echo '<div class="inner flex gap-x-8 pt-[30px] relative w-full">';
             while( have_rows('forms', 'option') ): the_row();
 
                 $button_bg = get_sub_field('button_background');
