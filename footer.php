@@ -67,7 +67,7 @@ if( !empty( $side_buttons ) ):
             echo '</div>';
         endwhile;
 
-        echo '<div class="side-buttons flex-col gap-4 hidden h-full items-end justify-center relative lg:fixed lg:flex lg:right-0 lg:top-0 lg:z-[9998]">';
+        echo '<div class="side-buttons flex-col gap-4 hidden h-full items-end justify-center relative lg:fixed lg:flex lg:right-0 lg:top-0">';
             echo '<div class="inner flex gap-x-8 origin-right pt-[30px] rotate-90 w-full">';
             while( have_rows('forms', 'option') ): the_row();
 
