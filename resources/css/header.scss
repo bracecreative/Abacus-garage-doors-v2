@@ -52,14 +52,16 @@
                                 @apply bg-white/10;
 
                                 &::after {
-                                    background-image: url(../resources/images/caret-down-orange.svg);
+                                    @apply rotate-180;
                                 }
                             }
                         }
                     }
 
                     &:hover .sub-menu {
-                        @apply block;
+                        @media all and (min-width: 1024px) {
+                            @apply block;
+                        }
                     }
 
                     .sub-menu {

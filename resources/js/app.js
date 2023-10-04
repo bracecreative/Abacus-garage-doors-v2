@@ -17,11 +17,12 @@ if( screen.width < 1024) {
             let submenus = document.querySelectorAll('.site-header .nav-wrapper .nav-menu .menu li.menu-item-has-children .sub-menu');
             submenus.forEach((sub) => {
                 sub.classList.remove('open');
-                sub.parentElement.classList.remove('open');
+                sub.previousElementSibling.classList.remove('open');
             });
 
             submenu.classList.toggle('open');
             submenu.parentElement.querySelector('.sub-menu').classList.toggle('open');
+
         });
     });
 }
