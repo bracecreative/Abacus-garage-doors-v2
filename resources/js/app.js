@@ -93,3 +93,32 @@ close_form_modal.forEach((form_close) => {
         form_close.parentElement.parentElement.style.display = "none";
     });
 });
+
+// Gallery Modals
+let gallery_images = document.querySelectorAll('.image-wrapper .gallery-modal');
+if( gallery_images.length > 0 ) {
+    gallery_images.forEach((images) => {
+        images.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            let gallery_modals = document.querySelectorAll('.gallery-modals .modal-wrapper');
+            if( gallery_modals.length > 0 ) {
+                gallery_modals.forEach((modal) => {
+                    modal.style.display = 'none';
+                });
+            }
+
+            let image_id = images.getAttribute('data-imgid');
+            document.getElementById(image_id).style.display = 'block';
+        })
+    });
+
+    let gallery_modals = document.querySelectorAll('.gallery-modals .modal-wrapper');
+    if( gallery_modals.length > 0 ) {
+        gallery_modals.forEach((modal) => {
+            modal.addEventListener('click', function(e) {
+                modal.style.display = 'none';
+            });
+        });
+    }
+}
