@@ -73,9 +73,9 @@ if( side_buttons.length > 0 ) {
             });
 
             let form_id = button.href;
-                form_id = form_id.split('/')[3];
+                form_id = form_id.split('#')[1];
 
-            let form = document.querySelector(form_id);
+            let form = document.querySelector('#'+form_id).id;
             if (form.style.display === "none") {
                 form.style.display = "block";
             } else {
