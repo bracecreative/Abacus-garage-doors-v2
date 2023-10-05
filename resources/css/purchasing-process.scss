@@ -2,7 +2,7 @@
 .purchasing_process {
 	.icon_grid {
 		.item:nth-child(n)::after {
-			content: url("/resources/svg/White-Arrow-chevron-down.svg");
+			content: url("..../resources/svg/White-Arrow-chevron-down.svg");
 			width: 45px;
 			height: 25px;
 			right: 75px;
@@ -16,7 +16,7 @@
 	@screen lg {
 		.icon_grid {
 			.item:nth-child(-n + 3)::after {
-				content: url("/resources/svg/White-Arrow-chevron-left.svg");
+				content: url("../resources/svg/White-Arrow-chevron-left.svg");
 				width: 45px;
 				height: 25px;
 				right: 0px;
@@ -27,7 +27,7 @@
 			}
 
 			.item:nth-child(-n + 3)::after {
-				content: url("/resources/svg/White-Arrow-chevron-left.svg");
+				content: url("../resources/svg/White-Arrow-chevron-left.svg");
 				width: 45px;
 				height: 25px;
 				right: 0px;
@@ -38,7 +38,7 @@
 			}
 
 			.item:nth-child(4)::after {
-				content: url("/resources/svg/White-Arrow-chevron-down.svg");
+				content: url("../resources/svg/White-Arrow-chevron-down.svg");
 				width: 45px;
 				height: 25px;
 				right: 75px;
@@ -49,7 +49,7 @@
 			}
 
 			.item:nth-child(5)::after {
-				content: url("/resources/svg/White-Arrow-chevron-right.svg");
+				content: url("../resources/svg/White-Arrow-chevron-right.svg");
 				width: 45px;
 				height: 25px;
 				right: 0px;
@@ -60,7 +60,7 @@
 			}
 
 			.item:nth-child(6)::after {
-				content: url("/resources/svg/White-Arrow-chevron-right.svg");
+				content: url("../resources/svg/White-Arrow-chevron-right.svg");
 				width: 45px;
 				height: 25px;
 				right: 0px;
@@ -71,7 +71,7 @@
 			}
 
 			.item:nth-child(7)::after {
-				content: url("/resources/svg/White-Arrow-chevron-right.svg");
+				content: url("../resources/svg/White-Arrow-chevron-right.svg");
 				width: 45px;
 				height: 25px;
 				right: 0px;
