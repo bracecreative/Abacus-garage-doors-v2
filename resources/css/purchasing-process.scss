@@ -2,7 +2,7 @@
 .purchasing_process {
 	.icon_grid {
 		.item:nth-child(n)::after {
-			content: url("..../resources/svg/White-Arrow-chevron-down.svg");
+			content: url("../resources/svg/White-Arrow-chevron-down.svg");
 			width: 45px;
 			height: 25px;
 			right: 75px;
@@ -29,7 +29,7 @@
 			.item:nth-child(-n + 3)::after {
 				content: url("../resources/svg/White-Arrow-chevron-left.svg");
 				width: 45px;
-				height: 25px;
+				height: 30px;
 				right: 0px;
 				bottom: 0px;
 				position: relative;

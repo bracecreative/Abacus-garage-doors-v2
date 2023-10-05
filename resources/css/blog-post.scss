@@ -1,15 +1,39 @@
-.simgle-post {
-    .posts-wrapper {
-        .post {
-            .content {
-                h2, h3, h4, h5, h6 {
-                    @apply mb-4;
-                }
-                
-                p {
-                    @apply mb-3 text-[#666];
-                }
-            }
-        }
-    }
+.single-post {
+	.posts-wrapper {
+		.post {
+			.content {
+				.content-inner {
+					h2,
+					h3,
+					h4,
+					h5,
+					h6 {
+						@apply my-4 text-xl font-semibold uppercase text-buttonblue py-2;
+					}
+
+					p {
+						@apply mb-3 text-[#666];
+					}
+
+					div {
+						@apply py-2;
+					}
+
+					ol,
+					ul {
+						@apply py-2 px-4;
+						list-style: disc;
+
+						li {
+							@apply py-2;
+						}
+					}
+
+					a {
+						@apply text-buttonblue underline hover:text-orange transition-all duration-200 ease-in-out;
+					}
+				}
+			}
+		}
+	}
 }

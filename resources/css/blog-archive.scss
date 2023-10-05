@@ -1,23 +1,34 @@
 .posts-wrapper {
-    .pagination {
-        @apply border border-solid border-[#dee2e6] rounded-md;
-        
-        .nav-links {
-            @apply flex flex-row flex-wrap;
+	.pagination {
+		@apply border border-solid border-[#dee2e6] rounded-md;
 
-            a {
-                @apply border-r border-solid border-[#dee2e6] inline-block px-3 py-1.5 text-buttonblue;
+		.nav-links {
+			@apply flex flex-row flex-wrap;
 
-                &:hover {
-                    @apply bg-[#e9ecef];
-                }
-            }
-            span {
-                &.current {
-                    @apply bg-buttonblue px-3 py-1.5 text-white;
-                }
-            }
-        }
+			a {
+				@apply border-r border-solid border-[#dee2e6] inline-block px-3 py-1.5 text-buttonblue;
 
-    }
+				&:hover {
+					@apply bg-[#e9ecef];
+				}
+			}
+			span {
+				&.current {
+					@apply bg-buttonblue px-3 py-1.5 text-white;
+				}
+			}
+		}
+	}
+
+	.button::after {
+		content: url("../resources/svg/White-Arrow-chevron-left.svg");
+		width: 45px;
+		height: 25px;
+		right: 30px;
+		z-index: 50;
+		top: 5px;
+		position: absolute;
+		display: inline-block;
+		transform: rotate(180deg);
+	}
 }
