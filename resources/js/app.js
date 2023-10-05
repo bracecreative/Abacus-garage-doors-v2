@@ -17,11 +17,12 @@ if( screen.width < 1024) {
             let submenus = document.querySelectorAll('.site-header .nav-wrapper .nav-menu .menu li.menu-item-has-children .sub-menu');
             submenus.forEach((sub) => {
                 sub.classList.remove('open');
-                sub.parentElement.classList.remove('open');
+                sub.previousElementSibling.classList.remove('open');
             });
 
             submenu.classList.toggle('open');
             submenu.parentElement.querySelector('.sub-menu').classList.toggle('open');
+
         });
     });
 }
@@ -36,7 +37,7 @@ scroll_up.addEventListener('click', function(e) {
 
 // Accordion Toggle
 let accordions = document.querySelectorAll('.accordion .items .item');
-if( accordions ) {
+if( accordions.length > 0 ) {
 
     accordions[0].querySelector('.header').classList.add('open');
     accordions[0].querySelector('.content').classList.remove('hidden');
@@ -56,5 +57,93 @@ if( accordions ) {
             item.querySelector('.content').classList.remove('hidden');
             item.querySelector('.content').classList.add('open');
         })
+    });
+}
+
+// Side Buttons
+let side_buttons = document.querySelectorAll('.side-buttons .form-btn');
+if( side_buttons.length > 0 ) {
+    side_buttons.forEach((button) => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            let footer_forms = document.querySelectorAll('.footer-form');
+            footer_forms.forEach((forms) => {
+                forms.style.display = "none";
+            });
+
+            let form_id = button.href;
+                form_id = form_id.split('/')[3];
+
+            let form = document.querySelector(form_id);
+            if (form.style.display === "none") {
+                form.style.display = "block";
+            } else {
+                form.style.display = "none";
+            }
+
+        });
+    });
+}
+
+let close_form_modal = document.querySelectorAll('.close-form');
+close_form_modal.forEach((form_close) => {
+    form_close.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        form_close.parentElement.parentElement.style.display = "none";
+    });
+});
+
+// Gallery Modals
+let gallery_images = document.querySelectorAll('.image-wrapper .gallery-modal');
+if( gallery_images.length > 0 ) {
+    gallery_images.forEach((images) => {
+        images.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            let gallery_modals = document.querySelectorAll('.gallery-modals .modal-wrapper');
+            if( gallery_modals.length > 0 ) {
+                gallery_modals.forEach((modal) => {
+                    modal.style.display = 'none';
+                });
+            }
+
+            let image_id = images.getAttribute('data-imgid');
+            document.getElementById(image_id).style.display = 'block';
+        })
+    });
+
+    let gallery_modals = document.querySelectorAll('.gallery-modals .modal-wrapper');
+    if( gallery_modals.length > 0 ) {
+        gallery_modals.forEach((modal) => {
+            modal.addEventListener('click', function(e) {
+                modal.style.display = 'none';
+            });
+        });
+    }
+}
+
+// CTA Block Buttons
+let cta_block_buttons = document.querySelectorAll('.cta-block a');
+if( cta_block_buttons.length > 0 ) {
+    cta_block_buttons.forEach((button) => {
+        button.addEventListener('click', function(e) {
+            let cta_link = button.href;
+            if( cta_link.includes('#') ) {
+                cta_link = cta_link.split('#');
+                cta_link = cta_link[1];
+
+                let form_id = cta_link.split('_');
+                    form_id = form_id[1];
+
+                let form = document.querySelector('#footer-form_'+form_id);
+                if (form.style.display === "none") {
+                    form.style.display = "block";
+                } else {
+                    form.style.display = "none";
+                }
+            }
+        });
     });
 }

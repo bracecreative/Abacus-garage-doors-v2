@@ -1,0 +1,10 @@
+.wpbc_booking_form_structure {
+    @apply flex flex-col gap-y-8 lg:flex-row lg:flex-wrap;
+
+    .wpbc_structure_calendar {
+        @apply lg:basis-7/12;
+    }
+    .wpbc_structure_form {
+        @apply lg:basis-3/12 lg:pl-[2%] ;
+    }
+}

@@ -1,7 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import "../fonts/opensans/opensans.css.css";
+@import "../fonts/opensans/opensans.css";
 
 @import "header.scss";
 
@@ -16,5 +16,12 @@
 @import "title-content-map.scss";
 @import "purchasing-process.scss";
 @import "title-content-image.scss";
+@import "accordion.scss";
+@import "contact-form.scss";
+@import "blog-archive.scss";
+@import "blog-post.scss";
+@import "areas.scss";
+@import "title_textarea.scss";
+@import "booking-forms.scss";
 
 @import "footer.scss";

@@ -16,7 +16,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["opensans", ...defaultTheme.fontFamily.sans],
+				sans: ["open-sans", ...defaultTheme.fontFamily.sans],
 			},
 			colors: tailpress.colorMapper(
 				tailpress.theme("settings.color.palette", theme)
