@@ -17,8 +17,8 @@ if( $columns == '1' ):
     $column_2_classes = '';
     $column_3_classes = '';
 elseif( $columns == '2' ):
-    $column_1_classes = 'lg:px-4 lg:w-2/4';
-    $column_2_classes = 'lg:px-4 lg:w-2/4';
+    $column_1_classes = 'lg:px-4 lg:w-4/6';
+    $column_2_classes = 'lg:px-4 lg:w-2/6';
     $column_3_classes = '';
 elseif( $columns == '3' ):
     $column_1_classes = 'lg:px-4 lg:w-1/3';
