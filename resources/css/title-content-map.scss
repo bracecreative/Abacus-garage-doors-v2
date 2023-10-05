@@ -1,5 +1,5 @@
-/* Title Content Image Component */
-.title_content_image {
+/* Title Content Map Component */
+.title_content_map {
 	.textarea {
 		h2,
 		h3,
@@ -19,6 +19,18 @@
 				list-style-type: disc;
 				@apply ml-8 lg:ml-10 py-1 text-[1.110rem] w-fit;
 			}
+		}
+	}
+
+	.map {
+		iframe {
+			width: 100%;
+			height: 100%;
+			min-height: 500px;
+		}
+
+		p {
+			@apply py-0 h-full min-h-[500px];
 		}
 	}
 }
