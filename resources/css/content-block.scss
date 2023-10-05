@@ -1,0 +1,17 @@
+.content-block {
+    .col {
+        .text-wrapper {
+            h1 {
+                @apply mb-6 text-buttonblue text-xl uppercase 2xl:text-4xl;
+            }
+
+            h2, h3, h4, h5, h6 {
+                @apply mb-6 text-buttonblue text-xl;
+            }
+
+            p {
+                @apply mb-3 text-base text-buttonblue;
+            }
+        }
+    }
+}

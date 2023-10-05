@@ -16,5 +16,6 @@
 @import "areas.scss";
 @import "title_textarea.scss";
 @import "booking-forms.scss";
+@import "content-block.scss";
 
 @import "footer.scss";

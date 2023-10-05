@@ -1,0 +1,13 @@
+{
+	"name": "content-block",
+	"title": "Content Block",
+	"description": "A content block.",
+	"style": ["file:.content-block.css"],
+	"category": "brace-blocks",
+	"icon": "text-page",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "/templates/content-block.php"
+	},
+	"align": "full"
+}
