@@ -29,10 +29,10 @@ echo '<section class="py-8 contact-bar" '.$background.'>';
 
 
                 if( $text ):
-                    echo '<div class="flex flex-row flex-wrap item basis-2/4 md:basis-1/3 basis-'.$item_width.'">';
+                    echo '<div class="flex flex-row item basis-2/4 md:basis-1/5 basis-'.$item_width.'">';
                         
                         if( $link_url ):
-                            echo '<a class="flex flex-row flex-wrap items-center w-full" href="'.$link_url.'" target="'.$link_target.'">';
+                            echo '<a class="flex flex-col flex-wrap items-center justify-center w-full gap-4 lg:flex-row" href="'.$link_url.'" target="'.$link_target.'">';
                         endif;
 
                         if( $icon ):

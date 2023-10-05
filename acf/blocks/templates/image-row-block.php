@@ -46,7 +46,7 @@ if( $images ):
                                 echo '<div class="p-6 my-auto text-center content bg-midblue lg:absolute lg:h-full lg:w-full lg:bg-midblue/90 lg:left-0 lg:top-0 xl:hidden">';
                                     if( $icon ):
                                             echo '<div class="text-center icon">';
-                                                echo wp_get_attachment_image($icon, 'full', '', array('class' => 'h-[30px] object-contain object-center mb-4 mx-auto w-[30px]'));
+                                                echo wp_get_attachment_image($icon, 'full', '', array('class' => 'h-[40px] object-contain object-center mb-4 mx-auto w-[40px]'));
                                             echo '</div>';
                                     endif;
 
