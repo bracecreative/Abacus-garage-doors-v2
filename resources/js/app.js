@@ -124,13 +124,15 @@ if( gallery_images.length > 0 ) {
     }
 }
 
-// CTA Block Buttons
-let cta_block_buttons = document.querySelectorAll('.cta-block a');
-if( cta_block_buttons.length > 0 ) {
-    cta_block_buttons.forEach((button) => {
-        button.addEventListener('click', function(e) {
-            let cta_link = button.href;
-            if( cta_link.includes('#') ) {
+// Form button links
+let links = document.querySelectorAll('a');
+if( links.length > 0 ) {
+    links.forEach((link) => {
+        link.addEventListener('click', function(e) {
+
+            let cta_link = link.href;
+            if( cta_link.includes('#footer') ) {
+                e.preventDefault();
                 cta_link = cta_link.split('#');
                 cta_link = cta_link[1];
 
@@ -138,10 +140,12 @@ if( cta_block_buttons.length > 0 ) {
                     form_id = form_id[1];
 
                 let form = document.querySelector('#footer-form_'+form_id);
-                if (form.style.display === "none") {
-                    form.style.display = "block";
-                } else {
-                    form.style.display = "none";
+                if( form ) {
+                    if (form.style.display === "none") {
+                        form.style.display = "block";
+                    } else {
+                        form.style.display = "none";
+                    }
                 }
             }
         });
