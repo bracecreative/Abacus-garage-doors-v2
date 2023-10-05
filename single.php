@@ -101,7 +101,7 @@ echo '</section>';
                             echo '<div class="content-inner mb-6 text-[#666]">';
                                 echo get_the_content();
                             echo '</div>';
-                            echo '<a class="inline-block px-10 py-2 text-white uppercase bg-buttonblue" href="'.site_url('blog').'">Back to blog</a>';
+                            echo '<a class="inline-block px-10 py-2 text-base font-semibold text-white uppercase transition-all duration-200 ease-in-out hover:bg-orange bg-buttonblue" href="'.site_url('blog').'">Back to blogs</a>';
                         echo '</div>';
                     echo '</div>';
                 echo '</article>';

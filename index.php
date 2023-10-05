@@ -98,11 +98,11 @@ echo '</section>';
                         endif;
 
                         echo '<div class="p-4 content">';
-                            echo '<h2 class="mb-3 text-lg uppercase"><a class="text-[#666]" href="'.get_the_permalink().'">'.get_the_title().'</a></h2>';
+                            echo '<h2 class="mb-3 text-lg uppercase"><a class="text-lg font-semibold transition-all duration-200 ease-in-out text-buttonblue hover:text-orange" href="'.get_the_permalink().'">'.get_the_title().'</a></h2>';
                             echo '<div class="excerpt mb-6 text-[#666]">';
                                 echo get_the_excerpt();
                             echo '</div>';
-                            echo '<a class="inline-block px-10 py-2 text-white uppercase bg-buttonblue" href="'.get_permalink().'">Read More</a>';
+                            echo '<a class="relative inline-block px-10 py-2 text-base font-semibold text-white uppercase transition-all duration-200 ease-in-out pr-14 button hover:bg-orange bg-buttonblue" href="'.get_permalink().'">Read More</a>';
                         echo '</div>';
                     echo '</div>';
                 echo '</article>';
