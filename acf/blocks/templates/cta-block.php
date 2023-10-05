@@ -14,11 +14,11 @@ if( !empty( $title ) ):
         echo '<div class="container flex flex-col gap-y-8 justify-center max-w-[1280px] mx-auto px-10 '.(($layout == 'row') ? "lg:flex-row lg:flex-wrap lg:items-start lg:justify-between":"").' 2xl:px-0">';
             
             if( !empty( $title ) ):
-                echo '<h2 class="text-xl font-semibold text-center text-white uppercase lg:text-5xl '.(($layout == 'row') ? "text-left":"").'">'.$title.'</h2>';
+                echo '<h2 class="text-3xl font-semibold text-center text-white uppercase lg:text-5xl '.(($layout == 'row') ? "text-left":"").'">'.$title.'</h2>';
             endif;
 
             if( !empty( $button ) ):
-                echo '<a class="block py-4 mx-auto text-lg font-semibold text-center text-white uppercase transition-all duration-200 ease-in-out w-fit bg-buttonblue hover:bg-lblue lg:inline-block lg:px-14" href="'.$button_url.'" target="'.$button_target.'">'.$button_text.'</a>';
+                echo '<a class="block py-4 mx-auto text-lg font-semibold text-center text-white uppercase transition-all duration-200 ease-in-out px-14 w-fit bg-buttonblue hover:bg-lblue lg:inline-block" href="'.$button_url.'" target="'.$button_target.'">'.$button_text.'</a>';
             endif;
 
         echo '</div>';

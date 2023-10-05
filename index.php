@@ -144,7 +144,7 @@ if( !empty( $title ) ):
             endif;
 
             if( !empty( $button ) ):
-                echo '<a class="block py-4 mx-auto text-lg font-semibold text-center text-white uppercase transition-all duration-200 ease-in-out bg-buttonblue w-fit hover:bg-lblue lg:inline-block lg:px-14" href="'.$button_url.'" target="'.$button_target.'">'.$button_text.'</a>';
+                echo '<a class="block py-4 text-lg font-semibold text-center text-white uppercase transition-all duration-200 ease-in-out bg-buttonblue hover:bg-lblue lg:inline-block lg:px-14" href="'.$button_url.'" target="'.$button_target.'">'.$button_text.'</a>';
             endif;
 
         echo '</div>';
