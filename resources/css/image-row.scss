@@ -1,17 +1,17 @@
 .image-row {
-    .images {
-        .item {
-            &.basis-25 {
-                @media all and (min-width: 1280px) {
-                    @apply basis-1/4;
-                }
-            }
+	.images {
+		.item {
+			&.basis-25 {
+				@media all and (min-width: 1280px) {
+					@apply basis-1/4;
+				}
+			}
 
-            &:hover .content {
-                @media all and (min-width: 1280px) {
-                    @apply block;
-                }
-            }
-        }
-    }
+			&:hover .content {
+				@media all and (min-width: 1280px) {
+					@apply flex flex-col items-center justify-center;
+				}
+			}
+		}
+	}
 }

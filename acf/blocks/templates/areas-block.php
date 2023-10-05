@@ -12,27 +12,27 @@ $map_code = $right_content['map_code'];
 $reviews = get_field('reviews_code');
 
 if( !empty( $left_content ) || !empty( $right_content ) ):
-    echo '<section class="areas py-8" style="background-color:'.$background.';">';
-        echo '<div class="container flex flex-col gap-y-8 mx-auto px-10 lg:flex-row lg:flex-wrap lg:items-start 2xl:px-0">';
+    echo '<section class="py-8 areas" style="background-color:'.$background.';">';
+        echo '<div class="container flex flex-col px-10 mx-auto gap-y-8 lg:flex-row lg:flex-wrap lg:items-start 2xl:px-0">';
 
             if( !empty( $left_content ) ):
                 echo '<div class="left-content basis-full '.((!empty($right_content)) ? "lg:basis-2/4 lg:pr-8":"").'">';
                     if( $left_title ):
-                        echo '<h2 class="mb-3.5 text-xl text-white uppercase">'.$left_title.'</h2>';
+                        echo '<h2 class="px-0 mb-6 text-3xl font-semibold text-center text-white uppercase lg:text-left">'.$left_title.'</h2>';
                     endif;
 
                     if( $left_text ):
-                        echo '<div class="content mb-4 text-white">'.$left_text.'</div>';
+                        echo '<div class="mb-4 text-white content">'.$left_text.'</div>';
                     endif;
 
                     if( have_rows('left_content') ): while( have_rows('left_content') ): the_row();
                         if( have_rows('areas') ):
-                            echo '<ul class="areas-list mb-8">';
+                            echo '<ul class="mt-6 mb-8 areas-list">';
                                 while( have_rows('areas') ): the_row();
                                 
                                     $area = get_sub_field('area');
 
-                                    echo '<li class="flex flex-row gap-4 items-center mb-2 text-white uppercase"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" fill="#FFF" /></svg>'.$area.'</li>';
+                                    echo '<li class="flex flex-row items-center gap-4 mb-2 text-white uppercase"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" fill="#FFF" /></svg>'.$area.'</li>';
                                 endwhile;
                             echo '</ul>';
                         endif;
@@ -42,9 +42,11 @@ if( !empty( $left_content ) || !empty( $right_content ) ):
                         $button_url = $left_button['url'];
                         $button_text = $left_button['title'];
                         $button_target = $left_button['target'] ? $left_button['target'] : '_self';
+                        echo '<div class="flex mt-6">';
                         if( !empty( $button_url ) && !empty( $button_text ) ): 
-                            echo '<a class="bg-orange px-8 py-3 text-white uppercase" href="'.$button_url.'" target="'.$button_target.'">'.$button_text.'</a>';
+                            echo '<a class="px-8 py-5 text-lg font-semibold text-white uppercase transition-all duration-200 ease-in-out bg-orange hover:bg-lblue" href="'.$button_url.'" target="'.$button_target.'">'.$button_text.'</a>';
                         endif;
+                        echo '</div>';
                     endif;
                 echo '</div>';
             endif;
@@ -58,7 +60,7 @@ if( !empty( $left_content ) || !empty( $right_content ) ):
             endif;
 
             if( !empty( $reviews ) ):
-                echo '<div class="reviews w-full">';
+                echo '<div class="w-full reviews">';
                     echo $reviews;
                 echo '</div>';
             endif;
