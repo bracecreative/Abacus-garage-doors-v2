@@ -5,15 +5,16 @@
 
 @import "header.scss";
 
-@import "contact-bar.scss";
-@import "image-row.scss";
-@import "purchasing-process.scss";
-@import "title-content-image.scss";
+@import "areas.scss";
 @import "accordion.scss";
+@import "image-row.scss";
+@import "blog-post.scss";
+@import "contact-bar.scss";
 @import "contact-form.scss";
 @import "blog-archive.scss";
-@import "blog-post.scss";
-@import "areas.scss";
-@import "title_textarea.scss";
+@import "title-textarea.scss";
+@import "title-content-map.scss";
+@import "purchasing-process.scss";
+@import "title-content-image.scss";
 
 @import "footer.scss";

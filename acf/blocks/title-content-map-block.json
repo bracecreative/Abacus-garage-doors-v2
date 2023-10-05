@@ -1,0 +1,14 @@
+{
+	"name": "title-content-map-block",
+	"title": "Title Content Map",
+	"description": "A custom Title Content Map block.",
+	"style": ["file:./title-content-map.css"],
+	"category": "brace-blocks",
+	"icon": "align-right",
+	"keywords": ["Title", "textarea", "Map", "Title content"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "./templates/title-content-map-block.php"
+	},
+	"align": "full"
+}
