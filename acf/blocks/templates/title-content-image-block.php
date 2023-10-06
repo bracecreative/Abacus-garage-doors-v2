@@ -66,7 +66,7 @@
         </div>
         <div class="container mx-auto flex flex-col items-center w-full px-4 py-16 <?php echo $display_content_option == "Left" ? "lg:items-end" : "lg:items-start"?> lg:px-8 lg:w-1/2">
             <div class="flex flex-col items-center max-w-lg lg:items-baseline">
-                <h3 class="w-full px-0 mb-6 text-3xl font-semibold text-center uppercase lg:text-left <?php echo $title_color ?>">
+                <h3 class="w-full px-0 mb-6 text-xl font-semibold text-center uppercase lg:text-left lg:text-2xl 2xl:text-3xl <?php echo $title_color ?>">
                     <?php echo get_field('title'); ?>
                 </h3>
                 <div class="text-base text-center lg:text-left textarea <?php echo $textarea_color ?>">

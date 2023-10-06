@@ -15,7 +15,7 @@
 
     .bottom-bar {
         p {
-            @apply font-semibold text-sm text-center text-white md:text-lg lg:text-2xl;
+            @apply font-semibold text-[12px] text-center text-white md:text-lg lg:text-2xl;
 
             a {
                 @apply text-white;

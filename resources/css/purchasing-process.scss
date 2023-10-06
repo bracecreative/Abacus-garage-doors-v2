@@ -2,14 +2,15 @@
 .purchasing_process {
 	.icon_grid {
 		.item:nth-child(n)::after {
-			content: url("..../resources/svg/White-Arrow-chevron-down.svg");
+			content: url("../resources/svg/White-Arrow-chevron-down.svg");
 			width: 45px;
 			height: 25px;
-			right: 75px;
+			right: 50%;
+			transform: translateX(50%);
 			bottom: -30px;
 			position: absolute;
 			display: inline-block;
-			transform: rotate(270deg);
+			
 		}
 	}
 

@@ -2,7 +2,7 @@
     .items {
         .item {
             .header {
-                @apply relative;
+                @apply cursor-pointer relative;
 
                 &::before {
                     background-image: url(../resources/images/plus.svg);

@@ -17,7 +17,7 @@
         $topbar_content = get_field('top_bar_content', 'option');
         if( !empty( $topbar_content ) ): ?>
             <div class="py-2 top-bar bg-dblue">
-                <div class="container max-w-[1280px] mx-auto lg:px-10 xl:px-0 xl:w-10/12">
+                <div class="container max-w-[1280px] mx-auto px-2 lg:px-10 xl:px-0 xl:w-10/12">
                     <?php echo $topbar_content; ?>
                 </div>
             </div>
@@ -25,7 +25,7 @@
 
         <div class="pt-6 bg-white middle md:bg-white/75">
             <div class="container max-w-[1280px] mx-auto md:flex md:flex-row md:flex-wrap xl:w-10/12">
-                <div class="px-4 pb-6 logo-wrapper md:basis-7/12 md:flex md:items-center md:justify-center md:pb-0 md:pl-[30px] md:pr-20 lg:basis-6/12 xl:pl-0">
+                <div class="px-10 pb-6 logo-wrapper md:basis-7/12 md:flex md:items-center md:justify-center md:pb-0 md:pl-[30px] md:pr-20 lg:basis-6/12 xl:pl-0">
                     <?php
                     $logo = get_field('logo', 'option');
                     if( !empty( $logo ) ):
@@ -36,7 +36,7 @@
                     ?>
                 </div>
 
-                <div class="flex flex-row flex-wrap locations gap-y-4 md:basis-5/12 lg:basis-6/12 lg:items-end">
+                <div class="flex flex-row flex-wrap locations gap-y-2 md:basis-5/12 lg:basis-6/12 lg:items-end">
                     <?php
                     $locations = get_field('phone_numbers', 'option');
                     if( !empty( $locations ) ):
@@ -46,7 +46,7 @@
 
                                     $location = get_sub_field('location');
                                     if( !empty( $location ) ):
-                                        echo '<p class="pb-2 text-sm text-center uppercase text-dblue lg:font-bold lg:text-lg">'.$location.'</p>';
+                                        echo '<p class="font-bold pb-1 text-sm text-center uppercase text-dblue lg:font-bold lg:text-lg">'.$location.'</p>';
                                     endif;
 
                                     $phone_no = get_sub_field('phone_number');
