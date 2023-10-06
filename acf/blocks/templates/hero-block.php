@@ -16,7 +16,7 @@ echo '<section class="hero-block relative '.$hero_bg_classes.'" '.$hero_bg_style
         echo '<div class="overlay absolute bg-black/5 h-full w-full"></div>';
     endif;
 
-    echo '<div class="container max-w-[1000px] mx-auto pb-16 md:pt-[400px] px-10 xl:px-0">';
+    echo '<div class="container max-w-[1000px] mx-auto pb-10 pt-10 md:pt-[440px] px-10 xl:px-0">';
         if( !empty( $hero_heading ) ):
             echo '<h1 class="font-medium text-center text-white text-xl uppercase lg:text-4xl">'.$hero_heading.'</h1>';
         endif;

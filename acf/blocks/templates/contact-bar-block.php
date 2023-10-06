@@ -6,7 +6,7 @@ else:
     $background = 'style="background-color: #83969f;";';
 endif;
 
-echo '<section class="py-8 contact-bar" '.$background.'>';
+echo '<section class="py-4 contact-bar" '.$background.'>';
     echo '<div class="container flex flex-row flex-wrap gap-y-6 items-center justify-center max-w-[1280px] mx-auto px-10 xl:px-0">';
 
         $items = get_field('items');
@@ -36,7 +36,7 @@ echo '<section class="py-8 contact-bar" '.$background.'>';
                         endif;
 
                         if( $icon ):
-                            echo wp_get_attachment_image( $icon, 'full', '', array('class' => 'basis-[30px] h-[30px] mr-3.5 w-[30px] lg:h-[42px] w-[42px]') );
+                            echo wp_get_attachment_image( $icon, 'full', '', array('class' => 'basis-[30px] h-[30px] lg:mr-3.5 w-[30px] lg:h-[42px] w-[42px]') );
                         endif;
 
                         if( $text ):

@@ -14,7 +14,7 @@ if( !empty( $title ) ):
         echo '<div class="container flex flex-col gap-y-8 justify-center max-w-[1280px] mx-auto px-10 '.(($layout == 'row') ? "lg:flex-row lg:flex-wrap lg:items-start lg:justify-between":"").' 2xl:px-0">';
             
             if( !empty( $title ) ):
-                echo '<h2 class="text-3xl font-semibold text-center text-white uppercase lg:text-5xl '.(($layout == 'row') ? "text-left":"").'">'.$title.'</h2>';
+                echo '<h2 class="text-2xl font-semibold text-center text-white uppercase lg:text-5xl '.(($layout == 'row') ? "text-left":"").'">'.$title.'</h2>';
             endif;
 
             if( !empty( $button ) ):
