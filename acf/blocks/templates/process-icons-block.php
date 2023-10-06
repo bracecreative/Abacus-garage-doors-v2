@@ -49,7 +49,7 @@
                 ?>
                 <div class="relative flex items-center justify-center gap-4 item">
                     <img class="w-[50px] h-[50px] object-contain object-center" src="<?php echo $icon?>" alt="<?php echo $iconAlt?> Image">
-                    <h3 class="text-xl font-semibold text-white"><?php echo $IconText?></h3>
+                    <h3 class="max-w-[200px] text-xl font-semibold text-white"><?php echo $IconText?></h3>
                 </div>
                 <?php endwhile;  endif; ?>
             </div>
