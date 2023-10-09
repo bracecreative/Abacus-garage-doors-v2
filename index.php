@@ -31,7 +31,7 @@ else:
     $background = 'style="background-color: #83969f;";';
 endif;
 
-echo '<section class="py-8 contact-bar" '.$background.'>';
+echo '<section class="py-4 contact-bar" '.$background.'>';
     echo '<div class="container flex flex-row flex-wrap gap-y-6 items-center justify-center max-w-[1280px] mx-auto px-10 xl:px-0">';
 
         $items = get_field('contact_bar', 'option');
@@ -54,14 +54,14 @@ echo '<section class="py-8 contact-bar" '.$background.'>';
 
 
                 if( $text ):
-                    echo '<div class="flex flex-row flex-wrap item basis-2/4 md:basis-1/3 basis-'.$item_width.'">';
+                    echo '<div class="flex flex-row item basis-2/4 md:basis-1/5 basis-'.$item_width.'">';
                         
                         if( $link_url ):
-                            echo '<a class="flex flex-row flex-wrap items-center w-full" href="'.$link_url.'" target="'.$link_target.'">';
+                            echo '<a class="flex flex-col flex-wrap items-center justify-center w-full gap-4 lg:flex-row" href="'.$link_url.'" target="'.$link_target.'">';
                         endif;
 
                         if( $icon ):
-                            echo wp_get_attachment_image( $icon, 'full', '', array('class' => 'basis-[30px] h-[30px] mr-3.5 w-[30px] lg:h-[42px] w-[42px]') );
+                            echo wp_get_attachment_image( $icon, 'full', '', array('class' => 'basis-[30px] h-[30px] lg:mr-3.5 w-[30px] lg:h-[42px] w-[42px]') );
                         endif;
 
                         if( $text ):
@@ -83,7 +83,8 @@ echo '</section>';
 ?>
 
 <section class="py-20 posts-wrapper">
-    <div class="container flex flex-col px-8 mx-auto gap-y-8 md:flex-row md:flex-wrap md:items-start md:justify-start 2xl:px-0">
+    <div
+        class="container flex flex-col px-8 mx-auto gap-y-8 md:flex-row md:flex-wrap md:items-start md:justify-start 2xl:px-0">
         <?php
         if( have_posts() ):
             while( have_posts() ): the_post();
@@ -140,11 +141,11 @@ if( !empty( $title ) ):
         echo '<div class="container flex flex-col gap-y-8 justify-center max-w-[1280px] mx-auto px-10 '.(($layout == 'row') ? "lg:flex-row lg:flex-wrap lg:items-start lg:justify-between":"").' 2xl:px-0">';
             
             if( !empty( $title ) ):
-                echo '<h2 class="text-xl font-semibold text-center text-white uppercase lg:text-5xl '.(($layout == 'row') ? "text-left":"").'">'.$title.'</h2>';
+                echo '<h2 class="text-2xl font-semibold text-center text-white uppercase lg:text-5xl '.(($layout == 'row') ? "text-left":"").'">'.$title.'</h2>';
             endif;
 
             if( !empty( $button ) ):
-                echo '<a class="block py-4 text-lg font-semibold text-center text-white uppercase transition-all duration-200 ease-in-out bg-buttonblue hover:bg-lblue lg:inline-block lg:px-14" href="'.$button_url.'" target="'.$button_target.'">'.$button_text.'</a>';
+                echo '<a class="block py-4 mx-auto text-lg font-semibold text-center text-white uppercase transition-all duration-200 ease-in-out px-14 w-fit bg-buttonblue hover:bg-lblue lg:inline-block" href="'.$button_url.'" target="'.$button_target.'">'.$button_text.'</a>';
             endif;
 
         echo '</div>';
