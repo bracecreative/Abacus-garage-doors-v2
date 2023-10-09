@@ -89,11 +89,11 @@ echo '</section>';
         if( have_posts() ):
             while( have_posts() ): the_post();
                 echo '<article class="px-4 post bais-full md:basis-2/4 lg:basis-1/3">';
-                    echo '<div class="inner border border-solid border-[#e6e6e6] shadow-sm">';
+                    echo '<div class="inner flex flex-col justify-between min-h-[400px] md:min-h-[500px] lg:min-h-[610px] border border-solid border-[#e6e6e6] shadow-sm">';
                         if( has_post_thumbnail() ):
                             echo '<figure>';
                                 echo '<a href="'.get_the_permalink().'">';
-                                    the_post_thumbnail('full', array('class' => 'h-[190px] lg:h-[300px]') );
+                                    the_post_thumbnail('full', array('class' => 'w-full object-cover object-center h-[190px] lg:h-[300px]') );
                                 echo '</a>';
                             echo '</figure>';
                         endif;
@@ -101,10 +101,10 @@ echo '</section>';
                         echo '<div class="p-4 content">';
                             echo '<h2 class="mb-3 text-lg uppercase"><a class="text-lg font-semibold transition-all duration-200 ease-in-out text-buttonblue hover:text-orange" href="'.get_the_permalink().'">'.get_the_title().'</a></h2>';
                             echo '<div class="excerpt mb-6 text-[#666]">';
-                                echo get_the_excerpt();
+                            echo get_the_excerpt();
                             echo '</div>';
-                            echo '<a class="relative inline-block px-10 py-2 text-base font-semibold text-white uppercase transition-all duration-200 ease-in-out pr-14 button hover:bg-orange bg-buttonblue" href="'.get_permalink().'">Read More</a>';
-                        echo '</div>';
+                            echo '<a class="relative inline-block w-fit px-10 py-2 text-base font-semibold text-white uppercase transition-all duration-200 ease-in-out pr-14 button hover:bg-orange bg-buttonblue" href="'.get_permalink().'">Read More</a>';
+                            echo '</div>';
                     echo '</div>';
                 echo '</article>';
 
