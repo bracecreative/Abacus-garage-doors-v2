@@ -1,7 +1,8 @@
 .areas {
-    .right-content {
-        iframe {
-            @apply w-full;
-        }
-    }
+	.right-content {
+		iframe {
+			@apply w-full;
+			min-height: 600px;
+		}
+	}
 }

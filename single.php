@@ -28,7 +28,7 @@ $cb_bg = get_field('cb_background', 'option');
 if( !empty( $cb_bg ) ):
     $background = 'style="background-color: '.$cb_bg.';"';
 else:
-    $background = 'style="background-color: #83969f;";';
+    $background = 'style="background-color: #253957;";';
 endif;
 
 echo '<section class="py-4 contact-bar" '.$background.'>';
