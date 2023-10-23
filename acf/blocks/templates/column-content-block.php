@@ -26,12 +26,14 @@
 <section class="px-4 py-8 bg-white bg-center bg-no-repeat bg-cover"
     style="background-image: url(<?php echo $display_background_image && $display_card_background_color =="Blue" ? get_template_directory_uri() . "/resources/svg/svg-main-bg.svg" : " "; ?>">
     <div class="container p-0 mx-auto">
-        <h3 class="w-full px-0 mb-10 text-2xl font-semibold text-center uppercase lg:max-w-xl lg:text-left text-orange">
+        <h3
+            class="w-full px-0 mb-10 text-2xl font-semibold text-center uppercase lg:max-w-xl lg:text-left text-buttonblue">
             <?php echo get_field('title'); ?>
         </h3>
 
-        <div class="grid grid-cols-1 <?php $display_card_background_color == "Blue"? "gap-0": "gap-4" ?> grid_content lg:grid-cols-3">
-             <?php if( have_rows('grid_content') ):
+        <div
+            class="grid grid-cols-1 <?php $display_card_background_color == "Blue"? "gap-0": "gap-4" ?> grid_content lg:grid-cols-3">
+            <?php if( have_rows('grid_content') ):
                     while( have_rows('grid_content') ) : the_row();
                     if( have_rows('card') ):
                             while( have_rows('card') ) : the_row();
@@ -49,7 +51,7 @@
                             
             ?>
 
-           <div class="<?php if($display_card_background_color == "Blue" && $currentIteration == 1)
+            <div class="<?php if($display_card_background_color == "Blue" && $currentIteration == 1)
            { echo "bg-midblue"; }
            elseif ($display_card_background_color == "Blue" && $currentIteration == 2)
            { echo "bg-lblue"; }
@@ -60,11 +62,13 @@
             ?> flex flex-col items-center justify-between p-8 w-full">
                 <div class="flex flex-col gap-2 w-full">
                     <?php if( !empty( get_sub_field('title') ) ): ?>
-                        <h3 class="mb-6 text-2xl font-semibold text-center uppercase <?php echo $display_card_background_color =="Blue" ? "text-white" : "text-orange"; ?>">
-                            <?php echo get_sub_field('title'); ?>
-                        </h3>
+                    <h3
+                        class="mb-6 text-2xl font-semibold text-center uppercase <?php echo $display_card_background_color =="Blue" ? "text-white" : "text-buttonblue"; ?>">
+                        <?php echo get_sub_field('title'); ?>
+                    </h3>
                     <?php endif; ?>
-                    <div class="text-base text-center lg:text-left text-[1.110rem] <?php echo $display_card_background_color =="Blue" ? "text-white" : "text-lgrey"; ?>">
+                    <div
+                        class="text-base text-center lg:text-left text-[1.110rem] <?php echo $display_card_background_color =="Blue" ? "text-white" : "text-lgrey"; ?>">
                         <?php echo get_sub_field('textarea'); ?>
                     </div>
                 </div>

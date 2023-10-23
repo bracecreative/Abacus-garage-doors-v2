@@ -16,16 +16,17 @@
         <?php
         $topbar_content = get_field('top_bar_content', 'option');
         if( !empty( $topbar_content ) ): ?>
-            <div class="py-2 top-bar bg-dblue">
-                <div class="container max-w-[1280px] mx-auto px-2 lg:px-10 xl:px-0 xl:w-10/12">
-                    <?php echo $topbar_content; ?>
-                </div>
+        <div class="py-2 top-bar bg-dblue">
+            <div class="container max-w-[1280px] mx-auto px-2 lg:px-10 xl:px-0 xl:w-10/12">
+                <?php echo $topbar_content; ?>
             </div>
+        </div>
         <?php endif; ?>
 
         <div class="pt-6 bg-white middle md:bg-white/75">
             <div class="container max-w-[1280px] mx-auto md:flex md:flex-row md:flex-wrap xl:w-10/12">
-                <div class="px-10 pb-6 logo-wrapper md:basis-7/12 md:flex md:items-center md:justify-center md:pb-0 md:pl-[30px] md:pr-20 lg:basis-6/12 xl:pl-0">
+                <div
+                    class="px-10 pb-6 logo-wrapper md:basis-7/12 md:flex md:items-center md:justify-center md:pb-0 md:pl-[30px] md:pr-20 lg:basis-6/12 xl:pl-0">
                     <?php
                     $logo = get_field('logo', 'option');
                     if( !empty( $logo ) ):
@@ -67,16 +68,21 @@
             $bottom_content = get_field('bottom_bar_content', 'option');
             if( !empty( $bottom_content ) ):
                 ?>
-                <div class="bottom-bar bg-dblue border-b-2 border-white max-w-[1280px] mt-[20px] px-6 py-4 md:mx-auto md:w-11/12 xl:w-10/12">
-                    <?php echo $bottom_content; ?>
-                </div>
+            <div
+                class="bottom-bar bg-dblue border-b-2 border-white max-w-[1280px] mt-[20px] px-6 py-4 md:mx-auto md:w-11/12 xl:w-10/12">
+                <?php echo $bottom_content; ?>
+            </div>
             <?php endif; ?>
 
         </div>
 
-        <nav class="relative flex flex-col py-4 nav-wrapper bg-orange gap-y-4 max-w-[1280px] md:mx-auto md:w-11/12 lg:py-0 xl:w-10/12">
+        <nav
+            class="relative flex flex-col py-4 nav-wrapper bg-orange gap-y-4 max-w-[1280px] md:mx-auto md:w-11/12 lg:py-0 xl:w-10/12">
             <a class="flex flex-row items-center justify-center nav-toggle lg:hidden" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" width="36px" viewBox="0 0 448 512"><path fill="#FFF" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" width="36px" viewBox="0 0 448 512">
+                    <path fill="#FFF"
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg>
             </a>
             <div class="nav-menu absolute bg-orange hidden left-0 top-[64px] w-full z-[9999] lg:flex lg:static">
                 <?php

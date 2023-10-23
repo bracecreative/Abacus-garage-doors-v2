@@ -12,11 +12,11 @@ $map_code = $right_content['map_code'];
 $reviews = get_field('reviews_code');
 
 if( !empty( $left_content ) || !empty( $right_content ) ):
-    echo '<section class="py-8 areas" style="background-color:'.$background.';">';
-        echo '<div class="container flex flex-col px-10 mx-auto gap-y-8 lg:flex-row lg:flex-wrap lg:items-start 2xl:px-0">';
+    echo '<section class="py-0 areas" style="background-color:'.$background.';">';
+        echo '<div class="flex flex-col gap-y-8 lg:flex-row lg:flex-wrap lg:items-start">';
 
             if( !empty( $left_content ) ):
-                echo '<div class="left-content basis-full '.((!empty($right_content)) ? "lg:basis-2/4 lg:pr-8":"").'">';
+                echo '<div class="p-10 lg:px-20 left-content basis-full '.((!empty($right_content)) ? "lg:basis-2/4 lg:pr-8":"").'">';
                     if( $left_title ):
                         echo '<h2 class="px-0 mb-6 text-3xl font-semibold text-center text-white uppercase lg:text-left">'.$left_title.'</h2>';
                     endif;
@@ -52,7 +52,7 @@ if( !empty( $left_content ) || !empty( $right_content ) ):
             endif;
 
             if( !empty( $right_content ) ):
-                echo '<div class="right-content basis-full '.((!empty($left_content)) ? "lg:basis-2/4 lg:pl-8":"").'">';
+                echo '<div class="right-content h-full min-h-[600px] w-full overflow-hidden basis-full '.((!empty($left_content)) ? "lg:basis-2/4":"").'">';
                     if( !empty( $map_code ) ):
                         echo $map_code;
                     endif;
@@ -60,7 +60,7 @@ if( !empty( $left_content ) || !empty( $right_content ) ):
             endif;
 
             if( !empty( $reviews ) ):
-                echo '<div class="w-full reviews">';
+                echo '<div class="container mx-auto py-8 w-full reviews">';
                     echo $reviews;
                 echo '</div>';
             endif;

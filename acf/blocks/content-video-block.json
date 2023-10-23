@@ -1,0 +1,14 @@
+{
+	"name": "content-video",
+	"title": "Content Video",
+	"description": "A custom column content block.",
+	"style": ["file:./content-video.css"],
+	"category": "brace-blocks",
+	"icon": "columns",
+	"keywords": ["video", "textarea", "content", "grid content"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "./templates/content-video-block.php"
+	},
+	"align": "full"
+}

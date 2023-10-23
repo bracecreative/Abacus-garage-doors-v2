@@ -30,7 +30,7 @@ $column_1 = get_field('column_1');
 if( !empty( $column_1 ) ):
     $column_1_type = $column_1['column_type'];
     $column_1_img = $column_1['image'];
-    $column_1_video = $column_1['video'];
+    $column_1_textarea = $column_1['textarea'];
     $column_1_text = $column_1['text'];
 endif;
 
@@ -38,7 +38,7 @@ $column_2 = get_field('column_2');
 if( !empty( $column_1 ) ):
     $column_2_type = $column_2['column_type'];
     $column_2_img = $column_2['image'];
-    $column_2_video = $column_2['video'];
+    $column_2_textarea = $column_2['textarea'];
     $column_2_text = $column_2['text'];
 endif;
 
@@ -46,7 +46,7 @@ $column_3 = get_field('column_3');
 if( !empty( $column_3 ) ):
     $column_3_type = $column_3['column_type'];
     $column_3_img = $column_3['image'];
-    $column_3_video = $column_3['video'];
+    $column_3_textarea = $column_3['textarea'];
     $column_3_text = $column_3['text'];
 endif;
 
@@ -59,14 +59,10 @@ if( !empty( $column_1 ) ):
                     echo wp_get_attachment_image($column_1_img, 'full');
                 endif;
 
-                if( $column_1_type == 'video' && !empty( $column_1_video ) ):
-                    echo '<div class="video-wrapper">';
-                        if( str_contains($column_1_video, 'youtu') ):
-                            echo '<iframe width="100%" height="315" src="'.$column_1_video.'" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-                        elseif( str_contains($column_1_type, 'vimeo') ):
-                            echo '<iframe src="'.$column_1_video.'" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
-                        endif;
-                    echo '</div>';
+                if( $column_1_type == 'textarea' && !empty( $column_1_textarea ) ):
+                    echo '<div class="right-text-wrapper">';
+                            echo $column_1_textarea;
+                        echo '</div>';
                 endif;
 
                 if( $column_1_type == 'text' && !empty( $column_1_text ) ):
@@ -82,13 +78,9 @@ if( !empty( $column_1 ) ):
                         echo wp_get_attachment_image($column_2_img, 'full');
                     endif;
 
-                    if( $column_2_type == 'video' && !empty( $column_2_video ) ):
-                        echo '<div class="video-wrapper max-w-[580px]">';
-                            if( str_contains($column_2_video, 'youtu') ):
-                                echo '<iframe width="100%" height="315" src="'.$column_2_video.'" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-                            elseif( str_contains($column_2_type, 'vimeo') ):
-                                echo '<iframe src="'.$column_2_video.'" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
-                            endif;
+                    if( $column_2_type == 'textarea' && !empty( $column_2_textarea ) ):
+                        echo '<div class="right-text-wrapper">';
+                            echo $column_2_textarea;
                         echo '</div>';
                     endif;
 
@@ -106,13 +98,9 @@ if( !empty( $column_1 ) ):
                     echo wp_get_attachment_image($column_3_img, 'full');
                 endif;
 
-                if( $column_3_type == 'video' && !empty( $column_3_video ) ):
-                    echo '<div class="video-wrapper">';
-                        if( str_contains($column_3_video, 'youtu') ):
-                            echo '<iframe width="100%" height="315" src="'.$column_3_video.'" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-                        elseif( str_contains($column_3_type, 'vimeo') ):
-                            echo '<iframe src="'.$column_3_video.'" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
-                        endif;
+                if( $column_3_type == 'textarea' && !empty( $column_3_textarea ) ):
+                    echo '<div class="right-text-wrapper">';
+                        echo $column_3_textarea;
                     echo '</div>';
                 endif;
 

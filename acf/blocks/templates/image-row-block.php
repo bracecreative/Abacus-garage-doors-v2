@@ -12,7 +12,7 @@ if( $images ):
         if( $title ):
             echo '<div class="title">';
                 echo '<div class="container px-10 mx-auto 2xl:px-0">';
-                    echo '<h2 class="w-full px-0 mb-6 text-3xl font-semibold text-center uppercase lg:text-left text-orange lg:mb-12">'.$title.'</h2>';
+                    echo '<h2 class="w-full px-0 mb-6 text-3xl font-semibold text-center uppercase lg:text-left text-buttonblue lg:mb-12">'.$title.'</h2>';
                 echo '</div>';
             echo '</div>';
         endif;
