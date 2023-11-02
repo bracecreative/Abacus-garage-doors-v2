@@ -79,7 +79,7 @@ if( !empty( $column_1 ) ):
                     endif;
 
                     if( $column_2_type == 'textarea' && !empty( $column_2_textarea ) ):
-                        echo '<div class="right-text-wrapper">';
+                        echo '<div class="right-text-wrapper flex flex-col items-center">';
                             echo $column_2_textarea;
                         echo '</div>';
                     endif;
