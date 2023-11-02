@@ -29,7 +29,7 @@
         if( !empty( $left_content ) || !empty( $right_content ) ):
             echo '<div class="flex flex-col content-wrap gap-y-4 md:flex-row md:flex-wrap md:items-start md:justify-start">';
                 if( !empty( $left_content ) ):
-                    echo '<div class="flex left-content text-white basis-full md:basis-7/12">';
+                    echo '<div class="flex left-content text-white basis-full">';
                         echo $left_content;
                     echo '</div>';
                 endif;
