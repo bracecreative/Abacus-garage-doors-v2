@@ -32,6 +32,9 @@ if( !empty( $column_1 ) ):
     $column_1_img = $column_1['image'];
     $column_1_textarea = $column_1['textarea'];
     $column_1_text = $column_1['text'];
+    $column_1_button_url = $column_1['button_link']['url'];
+    $column_1_button_title = $column_1['button_link']['title'];
+    $column_1_button_target = $column_1['button_link']['target'];
 endif;
 
 $column_2 = get_field('column_2');
@@ -69,6 +72,16 @@ if( !empty( $column_1 ) ):
                     echo '<div class="text-wrapper">';
                         echo $column_1_text;
                     echo '</div>';
+                endif;
+                 if( $column_1_type == 'text' && !empty( $column_1_text ) ):
+                    echo '<div class="button-wrapper">';
+                        echo '<div class="flex">';
+                            echo '<a  href="'.$column_1_button_url.'" target="'.$column_1_button_target.'" class="px-8 py-3 text-lg font-semibold text-white uppercase transition-all duration-200 ease-in-out bg-orange">';
+                                echo $column_1_button_title;
+                            echo '</a>';
+                        echo '</div>';
+                    echo '</div>';
+                    
                 endif;
             echo '</div>';
 
