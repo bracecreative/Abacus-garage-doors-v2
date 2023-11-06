@@ -1,82 +1,82 @@
 .site-header {
-    .top-bar {
-        p {
-            @apply flex flex-row flex-wrap items-center justify-center text-white uppercase md:justify-end;
+	.top-bar {
+		p {
+			@apply flex flex-row flex-wrap items-center justify-center text-white uppercase md:justify-end;
 
-            img {
-                @apply ml-[8px] w-[100px] xl:w-[150px];
+			img {
+				@apply ml-[8px] w-[100px] xl:w-[150px];
 
-                &:first-child {
-                    @apply mr-[8px];
-                }
-            }
-        }
-    }
+				&:first-child {
+					@apply mr-[8px];
+				}
+			}
+		}
+	}
 
-    .bottom-bar {
-        p {
-            @apply font-semibold text-[12px] text-center text-white md:text-lg lg:text-2xl;
+	.bottom-bar {
+		p {
+			@apply font-semibold text-[12px] text-center text-white md:text-lg lg:text-2xl;
 
-            a {
-                @apply text-white;
-            }
-        }
-    }
+			a {
+				@apply text-white;
+			}
+		}
+	}
 
-    .nav-wrapper {
-        .nav-menu {
-            .menu {
-                @apply border-solid border-t border-white py-4 w-full lg:border-0 lg:flex lg:flex-row lg:flex-wrap lg:items-center lg:justify-between lg:px-2 lg:py-0;
+	.nav-wrapper {
+		.nav-menu {
+			.menu {
+				@apply border-solid border-t border-white py-4 w-full lg:border-0 lg:flex lg:flex-row lg:flex-wrap lg:items-center lg:justify-between lg:px-2 lg:py-0;
 
-                li {
-                    @apply text-sm text-white uppercase hover:bg-white/10;
-                    a {
-                        @apply block p-4 text-white lg:px-2.5 2xl:px-4 2xl:text-base;
-                    }
+				li {
+					@apply text-sm text-white uppercase hover:bg-white/10;
+					a {
+						@apply block p-4 text-white lg:px-2.5 2xl:px-4 2xl:text-base;
+					}
 
-                    &.menu-item-has-children {
-                        > a {
-                            @apply flex flex-row items-center justify-start lg:relative;
+					&.menu-item-has-children {
+						> a {
+							@apply flex flex-row items-center justify-start lg:relative;
 
-                            &::after {
-                                background-image: url(../resources/images/caret-down.svg);
-                                content: '';
-                                @apply bg-cover h-[20px] inline-block ml-6 w-[20px] lg:absolute lg:-bottom-[14px] lg:left-2/4 lg:ml-0 lg:-translate-x-2/4;
+							&::after {
+								background-image: url(../resources/images/caret-down.svg);
+								content: "";
+								@apply bg-cover h-[20px] inline-block ml-6 w-[20px] lg:absolute lg:-bottom-[14px] lg:left-2/4 lg:ml-0 lg:-translate-x-2/4;
 
-                                @media all and (min-width: 1024px) {
-                                    background-image: url(../resources/images/caret-down-orange.svg);
-                                }
-                            }
+								@media all and (min-width: 1024px) {
+									background-image: url(../resources/images/caret-down-orange.svg);
+								}
+							}
 
-                            &.open {
-                                @apply bg-white/10;
+							&.open {
+								@apply bg-white/10;
 
-                                &::after {
-                                    @apply rotate-180;
-                                }
-                            }
-                        }
-                    }
+								&::after {
+									@apply rotate-180;
+								}
+							}
+						}
+					}
 
-                    &:hover .sub-menu {
-                        @media all and (min-width: 1024px) {
-                            @apply block;
-                        }
-                    }
+					&:hover .sub-menu {
+						@media all and (min-width: 1024px) {
+							@apply block;
+						}
+					}
 
-                    .sub-menu {
-                        @apply hidden lg:absolute lg:bg-orange lg:top-[130%];
+					.sub-menu {
+						@apply hidden mt-0 lg:mt-[2rem] lg:absolute lg:bg-orange lg:top-[65%];
 
-                        &.open {
-                            @apply bg-orange block;
+						&.open {
+							@apply bg-orange block;
 
-                            li {
-                                @apply bg-white/10 hover:bg-transparent;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+							li {
+								@apply bg-white/10 hover:bg-transparent;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
