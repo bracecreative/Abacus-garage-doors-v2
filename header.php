@@ -13,16 +13,6 @@
 <body <?php body_class('font-sans');?>>
 
     <header class="w-full site-header md:absolute md:left-0 md:top-0 md:z-[9997]">
-        <?php
-        $topbar_content = get_field('top_bar_content', 'option');
-        if( !empty( $topbar_content ) ): ?>
-        <div class="py-2 top-bar bg-dblue">
-            <div class="container max-w-[1280px] mx-auto px-2 lg:px-10 xl:px-0 xl:w-10/12">
-                <?php echo $topbar_content; ?>
-            </div>
-        </div>
-        <?php endif; ?>
-
         <div class="pt-6 bg-white middle md:bg-white/75">
             <div class="container max-w-[1280px] mx-auto md:flex md:flex-row md:flex-wrap xl:w-10/12">
                 <div
